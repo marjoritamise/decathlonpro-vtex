@@ -1,0 +1,63 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+#set($evaluationRate = $product.EvaluationRate)
+
+
+
+<div class="shelf-item" data-product-id="$product.Id" data-product-category="$product.CategoryName">
+    <span data-id="$id" class="idProd"></span>
+    <div class="prateleira-suporte-mobile">
+        <div class="shelf-item__top">
+            <div class="shelf-item__flags">
+                <div class="flag-promotion">
+                    $product.HightLight
+                </div>
+                <div class="flag-discount">
+                    $product.DiscountHightLight
+                    <div class="discount-percent" style="display: none;">$product.ListPriceMinusBestPriceInPercent</div>
+                </div>
+            </div>
+            <div class="shelf-item__buy-info">
+                #if ($product.IsInStock)
+                    <div class="shelf-item__price sm">
+                        #if ($product.HasBestPrice)
+                            <span class="shelf-item__list-price">$product.ListPrice</span>
+                            <span class="shelf-item__best-price best-price__discount ">$product.BestPrice</span>
+                        #else
+                            <span class="shelf-item__best-price best-price__no-discount ">$product.BestPrice</span>
+                        #end
+
+                        #if ($product.NumbersOfInstallment > 1)
+                            <span class="shelf-item__installments">
+                                até ${product.NumbersOfInstallment}x $product.InstallmentValue
+                            </span>
+                        #end
+                    </div>
+                #else
+                    <div class="shelf-item__no-stock">
+                        <span>Produto esgotado!</span>
+                    </div>
+                #end
+            </div>
+        </div>
+
+        <div class="shelf-item__img">
+            <a class="shelf-item__img-current" title="$escapedName" href="$uri">$product.GetImageTag(200,200)</a>
+        </div>
+
+        <div class="shelf-item__skus">
+            <div class="shelf-item__sku--cor"></div>
+        </div>
+    </div>
+
+    <div class="shelf-item__title">
+        <div class="shelf-item__brand">$product.Brand</div>
+        <h3><a title="$escapedName" href="$uri">$product.Name</a></h3>
+    </div>
+
+    <div class="shelf-item__button">
+        <a href="$uri" class="shelf-item__btn-buy" title="Comprar">Adicionar ao carrinho</a>
+    </div>
+    <input type="hidden" name="hidden-link" class="shelf-item__hidden-link" value="$uri">
+</div>

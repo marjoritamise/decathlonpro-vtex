@@ -1,0 +1,76 @@
+$beneficios-list: "catalogo",
+"garantia",
+"lojas",
+"condicoes";
+.barra-beneficios {
+    background-color: $decaBlue;
+    color: #fff;
+    font-family: $secondaryFont;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0;
+    a {
+        color: white;
+    }
+    .wrapper { 
+        @extend .av-container;
+        padding: 0;
+    }
+    .icon-arrow-beneficios {
+        @extend .sprite-arrow-beneficios;
+    }
+    .slick-arrow {
+        top: 40%;
+        opacity: 0.3;
+        &:hover {
+            opacity: 1
+        }
+    }
+    .slick-prev {
+        left: 20px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    .slick-next {
+        right: 20px;
+    }
+}
+
+.beneficio-item {
+    // @extend .av-col-xs-6
+    width: 20%;
+    text-align: center;
+    float: left;
+    &.beneficio-orcamento{
+        i{
+            img{
+                width: 50px;
+            }
+        }
+    }
+    i {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    span {
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+        span {
+            font-weight: 400;
+            display: block;
+        }
+    }
+}
+
+@each $beneficio in $beneficios-list {
+    $i: index($beneficios-list, $beneficio);
+    .beneficio-#{$beneficio} i {
+        $beneficioIcon: 'inline/beneficio-#{$beneficio}.png';
+        background-image: inline-image($beneficioIcon);
+        height: image-height('../img/#{$beneficioIcon}');
+        width: image-width('../img/#{$beneficioIcon}');
+    }
+}

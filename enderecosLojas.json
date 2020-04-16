@@ -1,0 +1,191 @@
+[
+  {
+      "cidade":"São Paulo",
+      "endereco":"Av. Queiroz Filho, 1310 - Vila Leopoldina",
+      "estado":"SP",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom: 9hs - 20hs",
+      "nome":"Loja - Decathlon Vila Lobos",
+      "telefone":"(11) 3181-6796",
+      "transportadora":"Loja - Decathlon Vila Lobos"
+  },
+  {
+      "cidade":"São Paulo",
+      "endereco":"Av. Duquesa de Goiás, 381 - Real Parque",
+      "estado":"SP",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom: 10hs - 21hs",
+      "nome":"Loja - Decathlon Morumbi",
+      "telefone":"(11) 3181-8660",
+      "transportadora":"Loja - Decathlon Morumbi"
+  },
+  {
+      "cidade":"São Paulo",
+      "endereco":"Av. Otto Baumgart, 500 - Vila Guilherme",
+      "estado":"SP",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Lar Center",
+      "telefone":"(11) 3181-8661",
+      "transportadora":"Loja - Decathlon Lar Center"
+  },
+  {
+      "cidade":"São Paulo",
+      "endereco":"Rod. Raposo Tavares, 6008 - Conjunto Residencial Butantã",
+      "estado":"SP",
+      "horario":"Seg/Sex: 10hs - 22hs / Sab: 9hs - 22hs / Dom/Fer: 9hs - 20hs",
+      "nome":"Loja - Decathlon Raposo Tavares",
+      "telefone":"(11) 3181-8662",
+      "transportadora":"Loja - Decathlon Raposo Tavares"
+  },
+  {
+      "cidade":"São José do Rio Preto",
+      "endereco":"Av. Pres. Juscelino K. de Oliveira, 4201 - Res. Eco Village I",
+      "estado":"SP",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom: 10hs - 20hs / Fer: 14hs - 20hs",
+      "nome":"Loja - Decathlon São José do Rio Preto",
+      "telefone":"(17) 3520-0025",
+      "transportadora":"Loja - Decathlon São José do Rio Preto"
+  },
+  {
+      "cidade":"São Bernardo do Campo",
+      "endereco":"Av. Pereira Barreto, 1500 - Baeta Neves",
+      "estado":"SP",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom/Fer: 9hs - 20hs",
+      "nome":"Loja - Decathlon São Bernardo do Campo",
+      "telefone":"(11) 3181-8940",
+      "transportadora":"Loja - Decathlon São Bernardo do Campo"
+  },
+  {
+      "cidade":"Praia Grande",
+      "endereco":"Litoral Plaza Shopping - Av. Ayrton Senna da Silva, 1511 - Sítio do Campo",
+      "estado":"SP",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 11hs - 20hs",
+      "nome":"Loja - Decathlon Praia Grande",
+      "telefone":"(13) 3513-0937",
+      "transportadora":"Loja - Decathlon Praia Grande"
+  },
+  {
+      "cidade":"Ribeirão Preto",
+      "endereco":"Av. Pres. Kennedy, 1500 - Ribeirânia",
+      "estado":"SP",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 11hs - 20hs",
+      "nome":"Loja - Decathlon Ribeirão Preto",
+      "telefone":"(16) 3515-9494",
+      "transportadora":"Loja - Decathlon Ribeirão Preto"
+  },
+  {
+      "cidade":"Sorocaba",
+      "endereco":"Av. Comendador Pereira Inácio, 2480 - Jd. Emilia",
+      "estado":"SP",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Sorocaba",
+      "telefone":"(15) 4062-9550",
+      "transportadora":"Loja - Decathlon Sorocaba"
+  },
+  {
+      "cidade":"São José dos Campos",
+      "endereco":"R. Andaraí, 400 - Jd. Satélite",
+      "estado":"SP",
+      "horario":"Seg/Sex: 10hs - 22hs / Sab: 9hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon São José dos Campos",
+      "telefone":"(12) 3512-7844",
+      "transportadora":"Loja - Decathlon São José dos Campos"
+  },
+  {
+      "cidade":"São Paulo",
+      "endereco":"Av. Pres. Castelo Branco, 4885 - Pte. Pequena",
+      "estado":"SP",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom/Fer: 9hs - 20hs",
+      "nome":"Loja - Decathlon Marginal Tietê",
+      "telefone":"(11) 2261-3249",
+      "transportadora":"Loja - Decathlon Marginal Tietê"
+  },
+  {
+      "cidade":"Curitiba",
+      "endereco":"R. Tobias de Macedo Júnior, 114 - Santo Inacio",
+      "estado":"PR",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Barigui",
+      "telefone":"(41) 3180-0237",
+      "transportadora":"Loja - Decathlon Barigui"
+  },
+  {
+      "cidade":"Curitiba",
+      "endereco":"Rod. BR-116 Pista Lateral, 10.000 - Jardim Botânico",
+      "estado":"PR",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Torres",
+      "telefone":"(41) 3073-0201",
+      "transportadora":"Loja - Decathlon Torres"
+  },
+  {
+      "cidade":"Londrina",
+      "endereco":"Av. Me. Leônia Milito, 2121 - Gleba Palhano",
+      "estado":"PR",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Londrina",
+      "telefone":"(43) 3032-1622",
+      "transportadora":"Loja - Decathlon Londrina"
+  },
+  {
+      "cidade":"Goiânia",
+      "endereco":"Av. I, 208 - Lote 2 - Jd. Goiás",
+      "estado":"GO",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Goiânia",
+      "telefone":"(62) 4053-9558",
+      "transportadora":"Loja - Decathlon Goiânia"
+  },
+  {
+      "cidade":"Joinville",
+      "endereco":"R. XV de Novembro, 2805 - Glória",
+      "estado":"SC",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 14hs - 20hs",
+      "nome":"Loja - Decathlon Joinville",
+      "telefone":"(47) 4063-9240",
+      "transportadora":"Loja - Decathlon Joinville"
+  },
+  {
+      "cidade":"Florianópolis",
+      "endereco":"Rod. SC-401, 3400 - Saco Grande",
+      "estado":"SC",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom: 9hs - 20hs / Fer: 14hs - 20hs",
+      "nome":"Loja - Decathlon Florianópolis",
+      "telefone":"(48) 3036-0236",
+      "transportadora":"Loja - Decathlon Florianópolis"
+  },
+  {
+      "cidade":"Rio de Janeiro",
+      "endereco":"Freeway Center - Av. das Américas, 2000 - Barra da Tijuca",
+      "estado":"RJ",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 21hs",
+      "nome":"Loja - Decathlon Barra da Tijuca",
+      "telefone":"(48) 3036-0236",
+      "transportadora":"Loja - Decathlon Barra da Tijuca"
+  },
+  {
+      "cidade":"Rio de Janeiro",
+      "endereco":"Freeway Center - Av. das Américas, 2000 - Barra da Tijuca",
+      "estado":"RJ",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 21hs",
+      "nome":"Loja - Decathlon Barra da Tijuca",
+      "telefone":"(21) 2018-0468",
+      "transportadora":"Loja - Decathlon Barra da Tijuca"
+  },
+  {
+      "cidade":"Belo Horizonte",
+      "endereco":"Av. Pastor Anselmo Silvestre, 1495 - União",
+      "estado":"MG",
+      "horario":"Seg/Sab: 9hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Belo Horizonte",
+      "telefone":"(31) 3181-0011",
+      "transportadora":"Loja - Decathlon Belo Horizonte"
+  },
+  {
+      "cidade":"Porto Alegre",
+      "endereco":"Av. Dr. Nilo Peçanha, 2061 - Três Figueiras",
+      "estado":"RS",
+      "horario":"Seg/Sab: 10hs - 22hs / Dom/Fer: 10hs - 20hs",
+      "nome":"Loja - Decathlon Nilo",
+      "telefone":"(51) 3181-0530",
+      "transportadora":"Loja - Decathlon Nilo"
+  }
+]

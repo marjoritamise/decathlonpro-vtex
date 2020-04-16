@@ -1,0 +1,245 @@
+.cadastro {
+	.main {
+		.wrapper {
+			@extend .av-container;
+			padding: 0;
+		}
+	}
+
+	.section-title {
+		@extend .av-col-xs-24;
+		h2 {@extend .st-title-header;}
+
+	}
+
+	.cadastro-form {
+		clear: both;
+		position: relative;
+		margin-bottom: 60px;
+	}
+
+	.cadastro-form,
+	form {
+		@extend .clearfix;
+	}
+
+	form {
+		&.formCadastro {
+			margin-top: 10px;
+			> div {
+				margin-bottom: 30px;
+			}			
+		}
+	}
+
+	.form-group { margin-bottom: 30px;}
+
+
+	.form-quarter {
+		@extend .av-col-md-6;
+		@extend .av-col-xs-12;
+	}
+
+	.form-half {
+		@extend .av-col-md-12;
+		@extend .av-col-xs-24;
+	}
+
+	.form-three-quarters {
+		@extend .av-col-md-18;
+		@extend .av-col-xs-24;
+
+		&.form-group {
+			height: 120px;
+			textarea {
+				height: 120px;
+			}
+		}
+	}
+
+	.form-email { @extend .av-col-xs-12; }
+	.form-quarter.form-cidade {
+		@extend .av-col-md-6;
+		@extend .av-col-xs-24;
+	}
+
+	.form-quarter.form-btn-container {
+		@extend .av-col-md-6;
+		@extend .av-col-xs-24;
+	}
+
+	.form-quarter-big {
+		@extend .av-col-md-4;
+		@extend .av-col-xs-12;
+	}
+
+	.form-quarter-small {
+		@extend .av-col-md-2;
+		@extend .av-col-xs-12;
+		min-height: 40px;
+	}
+
+	.formCadastro {
+		input[type="text"],
+		input[type="email"] {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			@include border-radius(0px);
+			font-size: 14px;
+			color: $primaryColor;
+		    width: 100%;
+		    padding: 9px 25px 10px 15px;
+
+		    &#numero {
+		    	padding-right: 10px;
+		    }
+		}
+	}
+
+	#formCadastro {
+		.form-group.checkbox { margin: 0 0 10px 0;}
+		.control-checkbox {	font-size: 12px; }
+	}
+
+	.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn),
+	.btn-group.bootstrap-select { width: 100%; height: 40px; }
+
+	select {
+	    width: 100%;
+	    height: 20px;
+	    border: 1px solid #ccc;
+	}
+
+
+	#formCadastro .bootstrap-select {
+		> .dropdown-menu.open,
+		> .dropdown-menu.open ul {
+			max-height: 164px !important;
+		}
+	}
+
+	textarea {
+	    width: 100%;
+	    @include border-radius(0px);
+	    padding: 9px 15px;
+	    background-color: #fff;
+	    border: 1px solid #ccc;
+	}
+
+	.form-btn-container {
+		button {
+			background-color: $decaBlue;
+			border: 0;
+			@include border-radius(2px);
+			color: #fff;
+			font-size: 15px;
+			text-transform: uppercase;
+			padding: 10px 76px;
+			background-image: url(/arquivos/button-arrow-right.png), url(/arquivos/button-shadow.png);
+			background-repeat: no-repeat, no-repeat;
+			background-position: 90% 50%, right bottom;
+			display: inline-block;
+			float: right;
+			margin-top: 18px;
+
+			&.button-disabled {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.av-modal--cadastro {
+		text-align: center;
+	}
+
+	.form-group.has-error .form-help {
+		position: absolute;
+		z-index: 5;
+	}
+
+	.cep-loading {
+		position: absolute;
+		top: 11px;
+		right: 20px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		z-index: 2;
+		background-image: url(/arquivos/ajax-loader--blue.gif);
+		opacity: 0;
+	}
+
+	.has-error {
+		input {border: 1px solid #E20C18 !important;}
+	}
+
+	@media (max-width: $screen-sm-max) {
+		form {
+			> div {
+				margin-bottom: 20px;
+				padding: 0 10px !important;
+			}
+
+			margin-top: 5px;
+		}
+
+		.form-group { margin-bottom: 20px;}
+
+		input[type="text"],
+		input[type="email"] {
+		    padding: 6px 15px 7px;
+		}
+
+		.bootstrap-select > .dropdown-toggle {
+			padding-top: 6px;
+			padding-bottom: 6px;
+		}
+
+		textarea {
+			height: 90px;
+		}
+
+		.form-three-quarters {
+			margin-bottom: 13px;
+			&.form-group {
+				height: 90px;
+
+				textarea {
+					height: 90px;
+				}
+			}
+		}
+
+		.form-btn-container button {
+			float: none;
+			display: block;
+			width: 164px;
+			padding: 9px 0 7px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 9px;
+			font-size: 12px;
+		}
+
+		#formCadastro .control-checkbox {
+			font-size: 11px;
+			line-height: 12px;
+
+			a {
+				color: $primaryColor;
+			}
+		}
+
+		.cadastro-form {
+			margin-bottom: 37px;
+			&:after {
+				bottom: -20px;
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+
+	}
+}
+

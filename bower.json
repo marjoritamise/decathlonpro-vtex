@@ -1,0 +1,41 @@
+{
+  "name": "vtex-speed-gulp",
+  "description": "VTEX Store development tools - reverse proxy, compilation, minification, optimization and more!",
+  "main": "",
+  "authors": [
+    "Carlo Schneider <carlo.schneider@penseavanti.com.br>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "vtex",
+    "speed",
+    "vtex",
+    "speed",
+    "gulp",
+    "sass",
+    "compass"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "slick-carousel": "^1.8.1",
+    "avanti-class": "^1.0.0",
+    "js-cookie": "^2.2.0",
+    "avanti-search": "^2.0.12",
+    "jquery-validation": "^1.17.0",
+    "bootstrap-select": "1.12.4",
+    "bootstrap-dropdown": "*",
+    "lazysizes": "^4.0.1",
+    "nouislider": "^11.0.3",
+    "babel": "^5.8.38"
+  }
+}

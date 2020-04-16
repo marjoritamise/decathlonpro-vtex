@@ -1,0 +1,256 @@
+.av-modal--product-images {
+	padding: 0;
+
+	.av-modal__modal {
+		width: 100%;
+		left: 0;
+		@include transform(translateX(0%));
+		padding: 0;
+		@extend .clearfix;
+		background: rgba(#000, .8);
+	}
+
+	.av-modal__content {
+		position: relative;
+		height: 640px;
+		overflow: hidden;
+	}
+
+	.av-modal-close {
+		top: 0;
+		right: 0;
+		width: 0;
+		height: 0;
+		border-left: 86px solid transparent;
+		border-right: 0px solid transparent;
+		border-top: 86px solid $decaBlue;
+
+		&:after {
+			position: absolute;
+			left: -41px;
+			top: -75px;
+			@extend .sprite-close-x-white-big;
+		}
+	}
+
+	$slickArrowPrev: 'inline/slick-arrow-prev.png';
+    $slickArrowNext: 'inline/slick-arrow-next.png';
+
+	.slick-arrow {
+	    top: 50%;
+	    @include transform(translateY(-50%));
+	    width: 38px;
+	    height: 38px;
+	    background-color: #fff;
+	    background-position: center;
+    	background-repeat: no-repeat;
+	    border: 1px solid $primaryColor;
+	    @include border-radius(50px);
+    }
+
+    .slick-prev {
+	    background-image: inline-image($slickArrowPrev);
+	    left: calc( 94px + 30px );
+    }
+
+    .slick-next {
+	    background-image: inline-image($slickArrowNext);
+	    right: 30px;
+    }
+}
+
+.modal-images__title {
+	width: 66px;
+	float: left;
+	position: absolute;
+	top: 50%;
+	@include transform(translateY(-50%));
+	span {
+		display: block;
+		background-color: $decaBlue;
+		font-family: $secondaryFont;
+		font-size: 12px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 25px 0;
+		text-align: center;
+	}
+}
+
+.modal-images {
+	background-color: #fff;
+	width: calc( 100% - 66px );
+	float: right;
+	@extend .clearfix;
+	position: relative;
+
+	.thumbs {
+		max-height: 640px;
+		height: 640px;
+		a {
+			display: block;
+			position: relative;
+		}
+
+		.ON {
+			&:before {
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 100%;
+				background: rgba(#0081c9, .5);
+			}
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		&::-webkit-scrollbar {
+		    display: none;
+		}
+	}
+
+	#include {
+		padding: 70px 0;
+		width: calc( 100% - 94px );
+		float: right;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 10px;
+			height: 100%;
+			top: 0;
+			left:-10px;
+			z-index: 2;
+			background: -moz-linear-gradient(left, rgba(204,204,204,0) 0%, rgba(204,204,204,1) 100%);
+			background: -webkit-linear-gradient(left, rgba(204,204,204,0) 0%,rgba(204,204,204,1) 100%);
+			background: linear-gradient(to right, rgba(204,204,204,0) 0%,rgba(204,204,204,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00cccccc', endColorstr='#cccccc',GradientType=1 );
+		}
+
+
+		#image {
+			max-width: 500px;
+			margin: 0 auto;
+		}
+
+		#image-main {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.slide-counter {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	@include transform(translateX(-50%));
+	text-align: center;
+	font-size: 14px;
+	font-family: $secondaryFont;
+	font-weight: 400;
+	color: $primaryColor;
+}
+
+.modal-brand {
+	position: absolute;
+	top: 40px;
+	left: 144px;
+}
+
+.av-modal--product-images {
+	@media (max-width: $screen-md) {
+		.modal-brand {
+			top: 20px;
+		}
+	}
+
+	@media (max-width: $screen-sm) {
+		.slick-prev {
+		    left: calc( 94px + 10px );
+	    }
+
+	    .slick-next {
+		    right: 10px;
+	    }
+	}
+
+	@media (max-width: $screen-xs-max) {
+		.modal-images {
+			#include #image {
+				width: 80%;
+			}
+
+			.thumbs {
+				height: 100%;
+				max-height: 600px;
+			}
+		}
+	}
+
+	@media (max-width: 600px) {
+		.modal-images {
+			.thumbs {
+				height: 100%;
+				max-height: 500px;
+				overflow: hidden;
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs) {
+		.av-modal__content {
+			height: auto;
+			overflow: visible;
+		}
+
+		.modal-images {
+			width: 100%;
+			float: none;
+		}
+
+		.modal-images__title {
+			top: auto;
+			width: 100%;
+			text-align: center;
+			@include transform(translateY(0%));
+			bottom: -43px;
+			background-color: #494949;
+
+			span {
+				padding: 13px 0;
+				margin: 0 auto;
+				display: inline-block;
+				width: 65px;
+				text-align: center;
+
+			}
+		}
+
+		.modal-brand {
+			top: 10px;
+			left: 20px;
+		}
+
+		#include {
+			float: none;
+			width: 100%;
+			padding: 50px 0;
+			min-height: 475px;
+
+			&:before { display: none;}
+		}
+
+		.thumbs {
+			float: none;
+			height: auto;
+		}
+	}
+}

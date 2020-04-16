@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+  <head>
+    <meta name="controller" content="Institucional" />
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+
+    <!-- INICIO - Subtemplate Metatags -->
+    <vtex:template id="1-dct-web-metatags" />
+    <!-- FIM - Subtemplate Metatags -->
+
+    <vtex:contentPlaceHolder id="meta description" />
+    <vtex:metaTags />
+    <vtex:contentPlaceHolder id="title" />
+
+    <!-- INICIO - Style e Subtemplate Styles -->
+    <vtex:template id="1-dct-web-styles" />
+    <!-- FIM - Subtemplate Styles -->
+  </head>
+
+  <body>
+    <!-- INICIO - Subtemplate Header -->
+    <vtex:template id="1-dct-web-header" />
+    <!-- FIM - Subtemplate Header -->
+
+    <!-- INICIO - Miolo da página -->
+    <main class="main" id="main">
+      <div class="institucional-title" id="conheca">
+        <div class="wrapper"><h2 class="faq-title">Como podemos te ajudar?</h2></div>
+      </div>
+
+      <div class="institucional-content">
+        <div class="wrapper">
+          <div class="institucional-text av-col-sm-12">
+            <form class="faq-form">
+              <div><input type="text" class="faq-form__search" placeholder="Qual sua dúvida?" /></div>
+              <div><button type="submit" class="faq-form__submit"></button></div>
+            </form>
+            <h4 class="faq-subtitle">Veja abaixo as perguntas mais frequentes da Decathlon PRO:</h4>
+            <ul class="faq-list">
+              <li class="faq-list__item">
+                <h4 class="title">Qual o canal direto de atendimento Corporativo? <i class="arrow"></i></h4>
+                <p class="content">E-mail: corporativo@decathlon.com</p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Quais são nossas formas de pagamento? <i class="arrow"></i></h4>
+                <p class="content">
+                  O site oferece as seguintes opções para pagamentos: cartões de crédito, depósito bancário á vista, boleto bancário vencimento com 5 dias úteis e em breve a opção 30 dias no boleto
+                  bancário.
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Quantos dias para liberar meu pedido? <i class="arrow"></i></h4>
+                <p class="content">
+                  O pedido será liberado somente após a confirmação do pagamento! Apenas para a opção de pagamento com cartão de crédito, permite a liberação imediata do seu pedido; sendo aprovada
+                  após a confitmação financeira do seu cartão.
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Onde posso visualizar o desconto que terei sobre minha compra corporativa? <i class="arrow"></i></h4>
+                <p class="content">
+                  No momento da escolha dos produtos quando eles são colocados no carrinho, o sitema calcula automáticamente o desconto sobre o valor total de sua compra, quanto maior for o valor da
+                  compra, maior será o desconto, veja o site para mais informações:
+                  <a href="HTTPS://WWW.DECATHLONPRO.COM.BR/ATENDIMENTO/FORMAS-DE-PAGAMENTO" target="_blank">HTTPS://WWW.DECATHLONPRO.COM.BR/ATENDIMENTO/FORMAS-DE-PAGAMENTO</a>
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Existe valor mínimo de compra? <i class="arrow"></i></h4>
+                <p class="content">Não temos pedido mínimo no boleto bancário, porém, para pagamento com cartão de crédito o límite de compra será de R$ 1.000,00.</p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Posso parcelar minha compra? <i class="arrow"></i></h4>
+                <p class="content">
+                  Sim, em até 6x sem juros no cartão de credito. Conheça nossas condições de parcelamentos e descontos do nosso site:
+                  <a href="HTTPS://WWW.DECATHLONPRO.COM.BR/ATENDIMENTO/FORMAS-DE-PAGAMENTO" target="_blank">HTTPS://WWW.DECATHLONPRO.COM.BR/ATENDIMENTO/FORMAS-DE-PAGAMENTO</a>
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Não encontrei o produto que queria, o que devo fazer? <i class="arrow"></i></h4>
+                <p class="content">Entre em contato conosco por e-mail: corporativo@decathlon.com</p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Garantia do produto <i class="arrow"></i></h4>
+                <p class="content">Todos os produtos da marca Decathlon tem a garantia mínima de 2 anos. Caso tenha dúvida referente a garantia, entre em contato com a nossa equipe corporativa.</p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Como funciona o serviço de personalização? <i class="arrow"></i></h4>
+                <p class="content">
+                  A personalização será apenas para nomes e números. Verifique quais são as lojas físicas que realizam esses procedimentos, para mais informações envie um e-mail para :
+                  corporativo@decathlon.com
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Quais são os procedimentos para ter meu orçamento? <i class="arrow"></i></h4>
+                <p class="content">
+                  Para ter seu orçamento, será necessário criar uma conta em nosso site corporativo. Ao acrescentar todos os itens desejados em seu carrinho, será possível verificar os valores. A
+                  validade da cotação será de 3 dias, contando da data de solicitação; caso tenha vencido, não hesite em solicitar um novo orçamento. Caso precise de um orçamento personalizado nos
+                  contacte no e-mail: corporativo@decathlon.com
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Politica de entrega <i class="arrow"></i></h4>
+                <p class="content">
+                  Trabalhamos com duas formas de entrega: 1. Entregamos no seu endereço, calculando o valor do frete e acrescentando ao seu pedido. 2. Podemos entregar em uma de nossas lojas físicas
+                  (sem cobrança de frete), e avisaremos assim que seu pedido estiver disponível para retirada. O valor e prazo de entrega serão calculados no ato da compra de acordo com o endereço
+                  solicitado.
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Não recebi o meu pedido, o que devo fazer? <i class="arrow"></i></h4>
+                <p class="content">
+                  Você pode acompanhar o status do seu pedido em “minha conta” na opção “meus pedidos”. Precisa de ajuda? Acesse o link:
+                  <a href="https://www.decathlon.com.br/atendimento" target="_blank">https://www.decathlon.com.br/atendimento</a>
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Quando eu posso retirar o meu pedido na opção Retire na Loja? <i class="arrow"></i></h4>
+                <p class="content">
+                  A retirada do pedido poderá ser feita quando você receber o email de confirmação de entrega ou quando o status do pedido estiver como "Entregue". Para realização da retirada, você
+                  deverá comparecer a unidade selecionada com um documento oficial. O pedido ficará disponível por 10 dias corridos, a contar da data de entrega. Caso não seja retirado neste prazo,
+                  ele voltará ao estoque. Mas não se preocupe, você terá um voucher com o valor pago na loja.
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Como faço para trocar uma compra feita no site? <i class="arrow"></i></h4>
+                <p class="content">
+                  Para as compras online, a troca poderá ser feita diretamente no nosso site www.decathlon.com.br através do atendimento por email ou entrando em contato conosco pelo telefone 11 3003
+                  1414 / RJ: 0800 747 1414. As trocas também poderão ser realizadas nas lojas físicas com a nota fiscal.  Lembramos que o prazo para solicitação é de 30 dias.
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Como faço para devolver um produto e ter estorno do valor? <i class="arrow"></i></h4>
+                <p class="content">
+                  Para solicitar devolução de um produto realizado no site, basta entrar em contato com nossa equipe de atendimento através do telefone ou email. Nosso time irá gerar um código de
+                  autorização de postagem para devolução do artigo em uma agência credenciada dos Correios. O código de postagem conterá todas as informações necessárias para envio.  O estorno do
+                  valor será realizado na mesma forma de pagamento escolhida no momento da compra. Em caso de pedidos realizados por boleto, o valor será estornado por depósito bancário. Para mais
+                  informações, consulte a nossa política em:
+                  <a href="https://www.decathlon.com.br/servicos/trocas-e-devolucoes" target="_blank">https://www.decathlon.com.br/servicos/trocas-e-devolucoes</a>
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">O que é o cartão presente? <i class="arrow"></i></h4>
+                <p class="content">
+                  O cartão presente, conhecido também como “ E- Card” é um cartão virtual, onde o cliente receberá apenas a numeração via e-mail e fará a torca por produtos em nossas lojas físicas em
+                  todo o Brasil.
+                </p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Existe um valor minino para a compra do cartão presente? <i class="arrow"></i></h4>
+                <p class="content">Sim, o valor minino é de R$20,00. <i class="arrow"></i></p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Como funciona a politica de desconto para o cartão presente? <i class="arrow"></i></h4>
+                <p class="content">O desconto concebido é de 5 % para todos os valores, desde que a opção de pagamento seja boleto báncario a vista.</p>
+              </li>
+              <li class="faq-list__item">
+                <h4 class="title">Onde trocar meu cartão presente? <i class="arrow"></i></h4>
+                <p class="content">
+                  A troca do cartão presente pode ser efetuada apenas nas lojas físicas, não sendo obrigátorio o uso em uma única compra. Em breve teremos a opção de troca do cartão disponível em
+                  nosso site www.decathlon.com.br
+                </p>
+              </li>
+            </ul>
+            <vtex:contentPlaceHolder id="Content Text" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- INICIO - Subtemplate Generico -->
+    <vtex:template id="1-dct-web-generico" />
+    <!-- FIM - Subtemplate Generico -->
+
+    <!-- INICIO - Subtemplate Footer -->
+    <vtex:template id="1-dct-web-footer" />
+    <!-- FIM - Subtemplate Footer -->
+
+    <!-- INICIO - Suport content -->
+    <div class="suport-content"></div>
+    <!-- FIM - Suport content -->
+
+    <!-- INICIO - Scripts e Subtemplate Scripts -->
+    <vtex:template id="1-dct-web-scripts" />
+    <!-- FIM - Subtemplate Scripts -->
+  </body>
+</html>

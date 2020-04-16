@@ -1,0 +1,58 @@
+{
+  "name": "vtex-speed-gulp",
+  "author": "Carlo Schneider <carlo.schneider@penseavanti.com.br>",
+  "store": "decathlonpro",
+  "acronym": "dct",
+  "environment": "vtexcommercestable",
+  "secureUrl": false,
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "VTEX Store development tools - reverse proxy, compilation, minification, optimization and more!",
+  "scripts": {
+    "lint": "xo assets/js/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vtex",
+    "speed",
+    "vtex",
+    "speed",
+    "gulp",
+    "sass",
+    "compass"
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.3.2",
+    "connect-http-please": "^0.3.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.2.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-debug": "^2.1.2",
+    "gulp-header": "^1.7.1",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-open": "^1.0.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-comments": "^2.4.3",
+    "gulp-uglify": "^1.5.3",
+    "isarray": "^1.0.0",
+    "proxy-middleware": "^0.15.0",
+    "run-sequence": "^1.1.5",
+    "serve-static": "^1.10.0",
+    "url": "^0.11.0"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "bootstrap-select": "^1.12.4",
+    "bootstrap-slider": "^10.0.0",
+    "bower": "^1.8.8",
+    "compass": "^0.1.1",
+    "install": "^0.13.0"
+  }
+}

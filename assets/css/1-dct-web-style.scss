@@ -1,0 +1,50 @@
+@import "compass/css3";
+
+/** Variables **/
+@import "1-dct-web-variables";
+
+/** Vendor **/
+@import "1-dct-web-bootstrap";
+@import "1-dct-web-decathlon-styles";
+@import "../vendor/slick-carousel/slick/slick";
+//@import "../vendor/seiyria-bootstrap-slider/src/sass/bootstrap-slider";
+@import "../vendor/nouislider/distribute/nouislider";
+
+@import "1-dct-web-sprite";
+@import "1-dct-web-sprite-tamanhos";
+@import "1-dct-web-fonts";
+@import "1-dct-web-mixins";
+@import "1-dct-web-helpers";
+@import "1-dct-web-buttons";
+
+@import "1-dct-web-general";
+@import "1-dct-web-footer";
+@import "1-dct-web-header";
+@import "1-dct-web-main-menu";
+@import "1-dct-web-drop";
+@import "1-dct-web-minicart";
+@import "1-dct-web-progressive-discount";
+@import "1-dct-web-prateleira";
+@import "1-dct-web-listagem";
+@import "1-dct-web-listagem-sidebar";
+@import "1-dct-web-fake-select";
+@import "1-dct-web-modal";
+@import "1-dct-web-slick";
+@import "1-dct-web-barras-beneficios";
+@import "1-dct-web-cartao-presente";
+@import "1-dct-web-produto-cartao-presente";
+@import "1-dct-web-list-filters";
+
+
+@import "1-dct-web-home";
+@import "1-dct-web-institucional";
+@import "1-dct-web-institucional-quem-somos";
+@import "1-dct-web-account";
+@import "1-dct-web-busca";
+@import "1-dct-web-buscaVazia";
+@import "1-dct-web-produto";
+@import "1-dct-web-produto-modal-images";
+@import "1-dct-web-quickbuy";
+@import "1-dct-web-cadastro";
+@import "1-dct-web-guia-de-tamanho";
+@import "1-dct-web-informativo";

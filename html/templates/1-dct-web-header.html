@@ -1,0 +1,246 @@
+<nav id="main-menu" class="navigation">
+  <div class="main-menu-header">
+    <span class="main-menu-back"></span>
+  </div>
+  <div class="main-menu-content">
+    <div class="main-menu-level-1">
+      <ul class="main-menu-static-list">
+        <li><a href="/catalogo/produtos-pedagogicos" class="gaClick" data-event-category="Menu"
+            data-event-action="Click Menu" data-event-label="Produtos Escolas e Faculdades">PRODUTOS ESCOLAS E
+            FACULDADES</a></li>
+        <li><a href="/catalogo/produtos-academia-e-studio" class="gaClick" data-event-category="Menu"
+            data-event-action="Click Menu" data-event-label="Produtos Academia e Studio">PRODUTOS ACADEMIA E STUDIO</a>
+        </li>
+        <li><a href="/catalogo/produtos-clubes-condominios" class="gaClick" data-event-category="Menu"
+            data-event-action="Click Menu" data-event-label="Produtos Clubes e Condomínios">PRODUTOS CLUBES E
+            CONDOMÍNIOS</a></li>
+        <!--<li><a href="">FEMININO</a></li>
+                <li><a href="">MASCULINO</a></li>
+                <li><a href="">INFANTIL</a></li>
+                <li><a href="">ACESSÓRIOS</a></li>
+                <li><a href="">SERVIÇOS</a></li> -->
+      </ul>
+    </div>
+    <div class="main-menu-level-2">
+      <div class="container-esportes-destaque">
+        <div class="main-esportes-destaque-hidden">
+          <vtex.cmc:esportesDestaqueMenu />
+        </div>
+      </div>
+
+      <div class="main-menu-filter-list"></div>
+    </div>
+  </div>
+  <div class="main-menu-footer-dekstop av-hidden-sm av-hidden-xs"></div>
+  <div class="main-menu-footer-mobile av-hidden-md av-hidden-lg">
+    <ul>
+      <li class="main-menu-footer-item"><a class="main-menu-ajuda gaClick" href="javascript:;"
+          data-event-category="Footer Mobile" data-event-action="Click Footer" data-event-label="Link Ajuda">AJUDA</a>
+      </li>
+      <li class="main-menu-footer-item"><a class="main-menu-quem-somos gaClick" href="/institucional/quem-somos"
+          data-event-category="Footer Mobile" data-event-action="Click Footer" data-event-label="Link Quems Somos">QUEM
+          SOMOS</a></li>
+      <li class="main-menu-footer-item"><a class="main-menu-minha-conta gaClick" href="/account"
+          data-event-category="Footer Mobile" data-event-action="Click Footer" data-event-label="Link Minha Conta">MINHA
+          CONTA</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="main-menu-overlay"></div>
+
+<!-- <div class="before-top av-hidden-sm av-hidden-xs">
+    <div class="wrapper">
+        <p>
+            Faça o seu pedido e aproveite os nossos descontos exclusivos e atendimento personalizado, <a href="/cadastro">CADASTRE-SE JÁ</a>. <span></span>
+        </p>
+        <span class="close-top-text"></span>
+    </div>
+</div> -->
+
+<header>
+  <div class="cnpj-top-bar">
+    <a class="cnpj-top-bar__link gaClick" href="https://www.decathlonpro.com.br/atendimento/formas-de-pagamento"
+      data-event-category="Header TopBar" data-event-action="Click TopBar Header"
+      data-event-label="Conheça as formas de pagamento e condições">Clique aqui e conheça as formas de pagamento e
+      descontos</a>
+  </div>
+
+  <div class="header-welcome hidden">
+    <vtex.cmc:welcomeMessage />
+  </div>
+  <div class="header-middle">
+    <div class="wrapper">
+      <div class="main-menu-bar">
+        <a href="#" class="main-menu-bar__link main-menu-bar__link--closed gaClick" data-event-category="Header"
+          data-event-action="Click Menu" data-event-label="Menu"><span class="main-menu-bar__span"></span></a>
+      </div>
+      <div class="header-brand">
+        <a href="/"><img src="/arquivos/logo-header-dct.png" /></a>
+      </div>
+      <span class="search-mobile-button av-hidden-md av-hidden-lg"></span>
+      <div class="header-search av-hidden-sm av-hidden-xs">
+        <div class="header-search__wrap">
+          <form action="#" method="post" class="header-search__form">
+            <div class="header-search__field">
+              <input type="search" class="header-search__input" placeholder="ENCONTRE + DE 5.000 PRODUTOS" />
+            </div>
+
+            <div class="header-search__field">
+              <button type="subtmit" class="header-search__button">Buscar</button>
+            </div>
+          </form>
+
+          <div class="search-target"></div>
+        </div>
+      </div>
+      <div class="header-links">
+        <ul>
+          <li class="header-item-ajuda">
+            <div class="header-item-cont"><a class="header-link header-link-ajuda gaClick" href="javascript:;"
+                data-event-category="Header" data-event-action="Click Header"
+                data-event-label="Link Ajuda"><i></i>Ajuda</a></div>
+          </li>
+          <li class="header-item-quem-somos">
+            <div class="header-item-cont"><a class="header-link header-link-quem-somos gaClick"
+                href="/institucional/quem-somos" data-event-category="Header" data-event-action="Click Header"
+                data-event-label="Link Quem Somos"><i></i>Quem somos</a></div>
+          </li>
+          <li class="header-item-account">
+            <div class="header-item-cont"><a class="header-link header-link-account gaClick" href="javascript:;"
+                data-event-category="Header" data-event-action="Click Header"
+                data-event-label="Link Minha Conta"><i></i>Minha Conta</a></div>
+          </li>
+          <li class="header-item-minicart">
+            <div class="header-item-cont"><a class="header-link header-link-minicart gaClick" href="javascript:;"
+                data-event-category="Header" data-event-action="Click Header"
+                data-event-label="Link Meu Carrinho"><i></i>Meu Carrinho<span></span></a></div>
+          </li>
+        </ul>
+
+        <!-- ========================================================================== -->
+        <!-- Task #16220, insert picture -->
+        <div class="header-ajuda-wrapper">
+          <h2 class="header-item-wrapper-top">como podemos ajudar?</h2>
+          <ul>
+
+            <!-- <li class="header-ajuda-perguntas"> -->
+            <!-- Task #16220, insert picture -->
+            <li>
+              <img src="https://decathlonstore.vteximg.com.br/arquivos/pictos_icon_perguntas-frequentes.png" alt="Ícone Perguntas"
+                width="20px" style="display:none; margin-right: 12%; margin-left: -20%;" />
+              <a href="/atendimento" aria-label="Menu Ajuda" data-event-category="Menu Ajuda"
+                data-event-action="Click Ajuda" data-event-label="Perguntas frequentes">Perguntas frequentes
+              </a>
+            </li>
+            <!-- Task #16220, insert picture -->
+
+            <li class="header-ajuda-nossas-lojas">Nossas lojas
+              <a href="/lojas" target="_blank" class="gaClick"
+                data-event-category="Box Ajuda" data-event-action="Click" data-event-label="Lojas">Encontre a loja mais
+                próxima
+              </a>
+            </li>
+
+            <li class="header-ajuda-email">Nos envie um e-mail para
+              <a href="mailto:corporativo@decathlon.com">
+                corporativo@decathlon.com
+              </a>
+            </li>
+
+            <li class="header-ajuda-telefone">
+              <b>Entre em contato por telefone</b>
+              <b>+55 (11) 3003-1414<br />RJ: 0800 747 1414</b>Segunda à Sábado / 9h às 22h<br />Feriado das 9h às 20h
+            </li>
+          </ul>
+        </div>
+        <!-- Task #16220, insert picture -->
+        <!-- ========================================================================== -->
+
+        <div class="header-account-wrapper">
+          <h2 class="header-item-wrapper-top">Minha Conta</h2>
+          <div class="header-account-content">
+            <div class="header-account-content-logged">
+              <p class="msg-login"></p>
+              <ul>
+                <li><a class="logged-link-register gaClick" href="/account" data-event-category="Box Minha Conta"
+                    data-event-action="Click" data-event-label="Meus dados">Meus dados</a></li>
+                <li><a class="logged-link-orders gaClick" href="/account/orders" data-event-category="Box Minha Conta"
+                    data-event-action="Click" data-event-label="Meus pedidos">Meus pedidos</a></li>
+                <li><a class="logged-link-orders gaClick" href="/account/budgets" data-event-category="Box Minha Conta"
+                    data-event-action="Click" data-event-label="Meus orçamentos">Meus orçamentos</a></li>
+                <li><a class="logged-link-logout gaClick" href="/no-cache/user/logout"
+                    data-event-category="Box Minha Conta" data-event-action="Click" data-event-label="Sair">Sair</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header-account-content-notlogged">
+              <p>Tenho um CNPJ cadastrado</p>
+              <!-- <label for="inputEmail" class="control-label"><span data-i18n="vtexid.email">Email</span></label>
+                            <input autofocus="" type="email" tabindex="1" id="inputEmail" ng-model="auth.email" data-i18n="[placeholder]vtexid.egEmail" class="ng-pristine ng-valid ng-valid-email"/> -->
+
+              <!-- <label for="inputPassword" class="control-label"><span data-i18n="vtexid.password">Senha</span></label>
+                            <input type="password" tabindex="2" autocomplete="off" required="" id="inputPassword" ng-model="password" class="ng-pristine ng-invalid ng-invalid-required"/> -->
+              <div class="btn-wrapper">
+                <button class="button button--blue button--large button-login-header">Entrar <i
+                    class="icon icon-arrow-white"></i></button>
+              </div>
+              <!--<div class="forget-password-wrapper">Esqueceu sua senha? <a href="#" data-i18n="vtexid.forgotPswd" class="dead-link link-forget-password" tabindex="4" ng-click="changePswd()">Clique aqui</a></div> -->
+
+              <p class="new-register-title">Cadastre-se</p>
+
+              <div class="new-register-wrapper"><a href="/cadastro"
+                  class="dead-link link-new-account button button--blue button--large gaClick"
+                  data-event-category="Box Login" data-event-action="Click" data-event-label="Cadastre-se">Criar uma
+                  Conta <i class="icon icon-arrow-white"></i></a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- START: Minicart -->
+        <div class="minicart">
+          <!-- START: Minicart Header -->
+          <div class="minicart-header">
+            <h3 class="minicart-header__title">MEU CARRINHO (<span></span>)</h3>
+
+            <a href="#" class="minicart-header__close menu-bar__link menu-bar__link--open">
+              <span class="menu-bar__span"></span>
+            </a>
+          </div>
+          <!-- END: Minicart Header -->
+
+          <!-- START: Minicart Products -->
+          <ul class="minicart-products"></ul>
+          <!-- END: Minicart Products -->
+
+          <!-- START: Minicart Footer -->
+          <div class="minicart-footer">
+
+            <div class="minicart-resume">
+              <div class="minicart-resume__wrap">
+                <div class="minicart-resume__total">
+                  <!-- <div class="minicart-resume__total-items">
+                            Items:
+                            <span class="minicart-resume__total-counter">0</span>
+                          </div> -->
+                  <div class="minicart-resume__total-price">
+                    <span class="minicart-resume__total-txt">Subtotal:</span>
+                    <span class="minicart-resume__total-price-target">R$ 0,00</span>
+                  </div>
+                </div>
+
+                <div class="minicart-resume__checkout">
+                  <a href="/checkout" class="minicart-checkout button button--large button--yellow gaClick"
+                    data-event-category="Box Carrinho" data-event-action="Click Botão"
+                    data-event-label="Ir para o carrinho">IR PARA O CARRINHO<i class="icon arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END: Minicart Footer -->
+        </div>
+        <!-- END: Minicart -->
+      </div>
+    </div>
+  </div>
+</header>

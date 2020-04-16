@@ -1,0 +1,143 @@
+<script>
+  (function () {
+    var restrictCheckout = {
+      init: function () {
+        var self = this
+
+        self.setup()
+        self.start()
+        self.bind()
+      },
+
+      setup: function () {
+        var self = this
+
+        self.urlHome = '/'
+        self.urlForm = '/cadastro'
+        self.urlLogout = '/no-cache/user/logout'
+      },
+
+      start: function () {
+        var self = this
+
+        self._getProfile(function (response) {
+          if (response === false) {
+            // self.redirectTo(self.urlHome)
+            self.userStatus();
+            self.bindStatus();
+            
+            return false
+          }
+
+          self._getStatus(response.Email, function (response) {
+            if (response === false) {
+              // self.redirectTo(self.urlForm)
+              self.userStatus();
+              self.bindStatus();
+
+              return false
+            }
+
+            var status = response[0].status
+
+            if (status === 'Pendente') {
+              // self.redirectTo(self.urlHome)
+              self.userStatus();
+              self.bindStatus();
+
+            } else if (status === 'Reprovado') {
+              // self.redirectTo(self.urlLogout)
+              self.userStatus();
+              self.bindStatus();
+            }
+          })
+        })
+      },
+
+      bind: function () {
+        var self = this
+
+        
+
+      },
+
+      userStatus: function () {
+        var disableSelect = $('input#client-document');
+        disableSelect.attr('disabled', 'disabled');
+        $('.pf-pj #is-corporate-client').trigger('click')
+      },
+
+      bindStatus: function () {
+        $('body').on('click', '#cart-to-orderform', function(){
+          if($('.pf-pj #is-corporate-client').is(':visible')) {
+            setTimeout(function(){
+              $('.pf-pj #is-corporate-client').trigger('click')
+            },100);
+          }
+        });
+
+        $('body').on('click', '#edit-profile-data', function(){
+          $('input#client-document').attr('disabled', 'disabled')
+        });
+      },
+
+      redirectTo: function (url) {
+        var self = this
+
+        window.location.href = url
+      },
+
+      _getProfile: function (callback) {
+        var self = this
+
+        $.ajax({
+          url: '/no-cache/profileSystem/getProfile',
+          dataType: 'json'
+        }).then(function (response) {
+          if (response.IsUserDefined === true) {
+            callback(response)
+
+          } else {
+            callback(false)
+          }
+        }, function (error) {
+          console.error('Error on get user profile.')
+
+          throw new Error(error)
+        })
+      },
+
+      _getStatus: function (email, callback) {
+        var self = this
+
+        var queryString = '_where=email=' + email + '&_fields=status'
+
+        $.ajax({
+          url: '/decathlonpro/dataentities/CL/search?' + queryString,
+          type: 'GET',
+          headers: {
+            'Accept': 'application/vnd.vtex.ds.v10+json',
+            'Content-Type': 'application/json',
+            'REST-Range': 'resources=0-1'
+          }
+        }).then(function (response) {
+          if (response.length) {
+            callback(response)
+
+          } else {
+            callback(false)
+          }
+
+        }, function (error) {
+          console.error('Error on get user profile.')
+
+          throw new Error(error)
+        })
+      }
+    }
+
+    $(window).on('load', function () {
+      restrictCheckout.init()
+    })
+  })()
+</script>

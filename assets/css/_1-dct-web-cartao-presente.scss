@@ -1,0 +1,461 @@
+.cartao-presente {
+	.cartao-presente-top-banner {
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.title-cartao-presente {
+		text-align: center;
+
+		@media (max-width: $screen-sm) {
+			padding: 0 20px;
+		}
+
+		h1 {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 22px;
+		    font-weight: 600;
+		    color: #393939;
+		    text-transform: uppercase;
+		    text-align: center;
+		    margin: 30px auto 0;
+		    line-height: 30px;
+		    max-width: 640px;
+		}
+	}
+
+	.btn-comprar-cartao-presente {
+		a {
+	    	color: #333;
+	    	text-decoration: none;
+		}
+
+		button {
+			background-color: #FFEA28;
+		    border: 1px solid #FFEA28;
+		    color: #333333 ;
+		    position: relative;
+		    font-family: "Roboto Condensed", sans-serif;
+		    font-weight: bold;
+		    display: table;
+		    margin: 0 auto;
+		    text-transform: uppercase;
+		    padding: 10px 60px 10px 40px;
+		    margin-top: 50px;
+		    margin-bottom: 50px;
+
+		    .icon {
+				position: absolute;
+			    right: 10%;
+			    top: 37%;
+			    background-position: -41px -20px;
+			    height: 10px;
+			    width: 6px;
+			    background-image: url(sprite-s0c3bea3960.png?v=2);
+    			background-repeat: no-repeat;
+			}
+		}
+
+		button:hover {
+			text-decoration: none;
+    		background-color: #fdd836;
+		}
+
+		button:after {
+			content: '';
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 8px 30px 0px 0;
+		    position: absolute;
+		    right: 0;
+		    bottom: 0;
+		    border-color: transparent #fdd836 transparent transparent;
+		}
+	}
+
+	.texto-motive {
+		text-align: center;
+
+		@media (max-width: $screen-sm) {
+			text-align: left;
+			padding: 0 20px;
+		}
+
+		h2 {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 25px;
+		    font-weight: 600;
+		    color: #393939;
+		    font-style: italic;
+		    text-transform: uppercase;
+		    text-align: center;
+    		margin: 20px auto;
+		    line-height: 30px;
+		    display: inline-grid;
+		    text-align: center;
+
+		    @media (max-width: $screen-sm) {
+				text-align: left;
+			}
+
+		    &:after {
+		    	content: '';
+			    border: 1px solid #ec6607;
+			    width: 20px;
+			    display: inline-block;
+		    }
+		}
+
+		p {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 14px;
+		    color: #393939;
+		    text-align: center;
+		    max-width: 840px;
+		    margin: 0 auto 15px;
+
+		    @media (max-width: $screen-sm) {
+				text-align: left;
+			}
+		}
+	}
+
+	.vantagens-recebe,
+	.vantagens-empresa {
+		margin-top: 80px;
+		text-align: center; 
+
+		@media (max-width: $screen-sm) {
+			text-align: left;
+			padding: 0 20px;
+		}
+
+		h3 {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 25px;
+		    font-weight: 600;
+		    color: #393939;
+		    font-style: italic;
+		    text-transform: uppercase;
+		    text-align: center;
+		    line-height: 30px;
+		    display: inline-grid;
+
+		    @media (max-width: $screen-sm) {
+				text-align: left;
+			}
+
+		    &:after {
+		    	content: '';
+			    border: 1px solid #ec6607;
+			    width: 20px;
+			    display: inline-block;
+		    }
+		}
+
+		.content-item {
+			width: 230px;
+			height: 180px;
+			display: inline-block;
+
+			@media (max-width: $screen-sm) {
+				width: 100%;
+				position: relative;
+				top: 6px;
+				height: auto;
+			}
+
+			img {
+				padding: 30px 0 20px;
+				display: inline-block;
+
+				@media (max-width: $screen-sm) {
+					padding: 15px 15px 15px 0;
+					float: left;
+				}
+			}
+
+			.caption--text {
+				display: inline-table;
+				padding: 0 20px;
+				width: 100%;
+
+				@media (max-width: $screen-sm) {
+					padding: 0;
+					display: unset;
+					position: relative;
+					top: 14px;
+				}
+			}
+		}
+	}
+
+	.depoimentos-clientes {
+		margin-top: 80px;
+		text-align: center; 
+
+		@media (max-width: $screen-sm) {
+			text-align: left;
+			padding: 0 20px;
+		}
+
+		h3 {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 25px;
+		    font-weight: 600;
+		    color: #393939;
+		    font-style: italic;
+		    text-transform: uppercase;
+		    text-align: center;
+		    line-height: 30px;
+		    display: inline-grid;
+
+		    &:after {
+		    	content: '';
+			    border: 1px solid #ec6607;
+			    width: 20px;
+			    display: inline-block;
+		    }
+		}
+	}
+
+
+	.recebi-cartao {
+		margin: 80px 0 80px;
+		text-align: center; 
+
+		@media (max-width: $screen-sm) {
+			text-align: left;
+			padding: 0 20px;
+		}
+
+		h3 {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 25px;
+		    font-weight: 600;
+		    color: #393939;
+		    font-style: italic;
+		    text-transform: uppercase;
+		    text-align: center;
+		    line-height: 30px;
+		    display: inline-grid;
+
+		    @media (max-width: $screen-sm) {
+				text-align: left;
+			}
+
+		    &:after {
+		    	content: '';
+			    border: 1px solid #ec6607;
+			    width: 20px;
+			    display: inline-block;
+		    }
+		}
+
+		h4 {
+			font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+		    font-size: 14px;
+		    color: #393939;
+		    text-align: center;
+		    margin: 15px auto 0px;
+		    font-size: 16px;
+
+		    @media (max-width: $screen-sm) {
+				text-align: left;
+			}
+		}
+
+		.content-item {
+			width: 350px;
+			height: 180px;
+			display: inline-block;
+			font-size: 12px;
+
+			@media (max-width: $screen-sm) {
+				width: 100%;
+				height: auto;
+				padding: 30px 0 0;
+			}
+
+			&:after {
+				content: '';
+				background: url('/arquivos/icon-arrow-left-cartao.png') no-repeat;
+				width: 30px;
+				height: 30px;
+				float: right;
+			    display: inline-block;
+			    position: absolute;
+			    position: relative;
+			    right: -18px;
+			    top: -60px;
+
+			    @media (max-width: $screen-sm) {
+					display: none;
+				}
+			}
+
+			&:last-child:after { 
+				display: none;
+			}
+
+			img {
+				padding: 30px 0 20px;
+				display: inline-block;
+
+				@media (max-width: $screen-sm) {
+					float: left;
+					padding: 5px 0 0;
+				}
+			}
+
+			.caption--text-passo,
+			.caption--text {
+				display: inline-table;
+				padding: 0 20px;
+				width: 100%;
+
+				@media (max-width: $screen-sm) {
+					display: block;		
+				    width: 100%;
+				    padding-left: 60px; 
+				}
+			}
+		}
+	}
+
+	.slick-depoimentos {
+		.depoimentos-item {
+
+			@extend .clearfix;
+		    padding: 20px 210px;
+		    margin-bottom: 20px;
+		    margin-left: -50px;
+
+		    @media (max-width: $screen-md) {
+		    	padding: 20px 120px;
+			}
+
+			@media (max-width: $screen-sm) {
+		    	padding: 20px 55px 0;
+			}
+		    
+		    h3 {
+		        @extend .st-paragraph-header;
+		        margin-top: 17px;
+		        margin-bottom: 20px;
+		        font-size: 17px;
+		    }
+		    
+		    p {
+		        @extend .st-paragraph;
+		        font-size: 12px;
+		        line-height: 15px;
+		        margin: 0 0 16px;
+		    }
+		}
+
+		.depoimentos-img {
+			width: 20%;
+		    display: inline-block;
+		    vertical-align: top;
+
+		    @media (max-width: $screen-sm) {
+		    	width: 100%;
+		    	margin-bottom: 20px;
+			}
+
+		    img {
+		        max-width: 100%;
+		        width: auto;
+		        display: block;
+		        margin: 0 auto;
+		    }
+		}
+
+		.depoimentos-info {
+		    width: 78%;
+		    display: inline-block;
+		    vertical-align: top;
+		    text-align: left;
+		    font-size: 12px;
+
+		    @media (max-width: $screen-md) {
+		    	padding-left: 30px;
+			}
+
+			@media (max-width: $screen-sm) {
+		    	width: 100%;
+			}
+
+		    .button {
+		        padding-left: 40px;
+		        padding-right: 55px;
+		    }
+		}
+
+		.slick-prev {
+			width: 89px;
+			height: 80px;
+			background: url('/arquivos/left-arrow-depoimentos.png') no-repeat;
+			float: left;
+			position: relative;
+			top: 15px;
+
+			@media (max-width: $screen-sm) {
+		    	display: none !important;
+			}
+		}
+
+		.slick-next {
+			width: 89px;
+			height: 80px;
+			background: url('/arquivos/right-arrow-depoimentos.png');
+			float: right;
+			position: relative;
+			top: -95px;
+
+			@media (max-width: $screen-sm) {
+		    	display: none !important;
+			}
+		}
+
+		.slick-dots {
+			margin: 0 0 0 50px;
+
+			@media (max-width: $screen-sm) {
+				margin: 0 0 0 -20px;
+			}
+
+			li {
+				background: url('/arquivos/icon-dot-depoimentos.png') no-repeat;
+				width: 12px;
+				height: 10px;
+				margin: 0 2px;
+
+				button {
+					width: 0;
+					height: 0;
+					background: #fff;
+				}
+			}
+
+			li.slick-active {
+				background: url('/arquivos/icon-dot-depoimentos-active.png') no-repeat;
+				width: 12px;
+				height: 10px;
+				margin: 0 2px;
+
+				button {
+					width: 0;
+					height: 0;
+					background: #fff;
+					border: unset;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

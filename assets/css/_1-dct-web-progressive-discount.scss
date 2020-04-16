@@ -1,0 +1,121 @@
+/**
+ * Progressive discount
+ */
+.minicart-progressive-discount {
+  margin: 10px 0;
+
+  .body-cart & {
+    text-align: center
+  }
+}
+
+.progressive-discount--small {}
+
+.minicart-progressive-discount--max {
+  .progressive-discount__progress {
+    @include border-top-right-radius(10px);
+    @include border-bottom-right-radius(10px);
+
+    width: 100% !important;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.minicart-progressive-discount--discount-0 {
+  .progressive-discount__progress,
+  .progressive-discount__progress:after {
+    background-color: #008ad7
+  }
+}
+
+.minicart-progressive-discount--discount-3 {
+  .progressive-discount__progress,
+  .progressive-discount__progress:after {
+    background-color: #0275b9
+  }
+}
+
+.minicart-progressive-discount--discount-4 {
+  .progressive-discount__progress,
+  .progressive-discount__progress:after {
+    background-color: #055f98
+  }
+}
+
+.minicart-progressive-discount--discount-5 {
+  .progressive-discount__progress,
+  .progressive-discount__progress:after {
+    background-color: #074a79
+  }
+}
+
+.minicart-progressive-discount--discount-6 {
+  .progressive-discount__progress,
+  .progressive-discount__progress:after {
+    background-color: #09385f
+  }
+}
+
+.minicart-progressive-discount--discount-7 {
+  .progressive-discount__progress,
+  .progressive-discount__progress:after {
+    background-color: #0d2947
+  }
+
+  .progressive-discount__info {
+    display: none;
+  }
+
+  .progressive-discount__message {
+    display: block
+  }
+}
+
+  .minicart-progressive-discount__wrap {
+    @include clearfix();
+  }
+    .progressive-discount__bar {
+      @include border-radius(10px);
+
+      background-color: #d8d8d8;
+      height: 16px;
+      margin: 10px auto;
+      width: 160px;
+    }
+      .progressive-discount__progress {
+        @include transition(all 200ms ease-out);
+        @include border-top-left-radius(10px);
+        @include border-bottom-left-radius(10px);
+
+        background-color: $secondaryColor;
+        height: 100%;
+        max-width: 100%;
+        min-width: 6%;
+        position: relative;
+        width: 6%;
+
+        &:after {
+          background-color: $secondaryColor;
+          bottom: -4px;
+          content: '';
+          position: absolute;
+          right: 0;
+          top: -4px;
+          width: 1px;
+        }
+      }
+
+    .progressive-discount__status {}
+      .progressive-discount__info {}
+        .progressive-discount__price {
+          font-weight: 700;
+        }
+
+        .progressive-discount__percent {}
+
+      .progressive-discount__message {
+        display: none;
+      }

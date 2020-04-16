@@ -1,0 +1,354 @@
+/**
+* Produto Cartão Presente
+*/
+.produto-cartao-presente {
+    @media (max-width: $screen-sm) {
+        .product-item-quantity__control,
+        .product-buy-button {
+            text-align: left;
+        }
+
+        .product-images {
+            height: 220px;
+        }
+    }
+
+    &.cartao-presente {
+        .vantagens-recebe {
+            margin-top: 0;
+        }
+    }
+
+    .personalize-cartao { 
+        position: relative;
+        text-align: center;
+        top: -75px;
+
+        @media (max-width: $screen-sm) {
+            background: #0082C3;
+            margin-top: 130px;
+            padding: 5% 20px;
+
+            -webkit-transform: skewY(5deg);
+            -moz-transform: skewY(5deg);
+            -ms-transform: skewY(5deg);
+            -o-transform: skewY(5deg);
+            transform: skewY(5deg);
+        }
+
+        .wrapper {
+            @extend .av-container;
+            padding: 0;
+
+            @media (max-width: $screen-sm) {
+                -webkit-transform: skewY(-5deg);
+                -moz-transform: skewY(-5deg);
+                -ms-transform: skewY(-5deg);
+                -o-transform: skewY(-5deg);
+                transform: skewY(-5deg);
+            }
+        }
+
+        h2.title {
+            font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: #393939;
+            font-style: italic;
+            text-transform: uppercase;
+            line-height: 30px;
+            display: inline-grid;
+            text-align: center;
+
+            @media (max-width: $screen-sm) {
+                float: left;
+                width: 100%;
+                text-align: left;
+                color: #fff;
+            }
+
+            &:after {
+                content: '';
+                border: 1px solid #ec6607;
+                width: 20px;
+                display: inline-block;
+            }
+        }
+
+        h3.subtitle {
+            font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+            color: #393939;
+            text-align: center;
+            margin: 15px auto 50px;
+            font-size: 16px;
+
+            @media (max-width: $screen-sm) {
+                text-align: left;
+                color: #fff;
+            }
+        }
+
+        .slick-modelos {
+
+            .slick-slide {
+                img {
+                    margin: 0 auto;
+                }
+                button {
+                    margin-top: 30px;
+                    color: #0082C3;
+                    border: 1px solid #0082C3;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                    padding: 7px 30px 5px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    background: #FFF;
+
+                    @media (max-width: $screen-sm) {
+                        background: #0082C3;
+                        color: #FFF;
+                        border: 1px solid #FFF;
+                        margin-top: 60px;
+                    }
+
+                    a {
+                        @media (max-width: $screen-sm) {
+                            color: #FFF;
+                        }
+                    }
+                }
+            }
+
+            .slick-dots {
+                margin: 0 0 0 50px;
+
+                @media (max-width: $screen-sm) {
+                    margin: 0px;
+                    position: relative;
+                    top: -70px;
+                }
+
+                li {
+                    background: url('/arquivos/icon-dot-modelos.png') no-repeat;
+                    width: 12px;
+                    height: 10px;
+                    margin: 0 2px;
+
+                    button {
+                        width: 0;
+                        height: 0;
+                        background: #fff;
+                        padding: 0;
+                    }
+                }
+
+                li.slick-active {
+                    background: url('/arquivos/icon-dot-modelos-active.png') no-repeat;
+                    width: 12px;
+                    height: 10px;
+                    margin: 0 2px;
+
+                    button {
+                        width: 0;
+                        height: 0;
+                        background: #fff;
+                        border: unset;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .depoimentos-clientes { 
+        margin-top: 100px;
+        text-align: center;
+
+        @media (max-width: $screen-sm) {
+            margin-top: -30px;
+            margin-bottom: 50px;
+            padding: 5% 20px;
+        }
+
+        .wrapper {
+            @extend .av-container;
+            padding: 0;
+        }
+
+        h3.title {
+            font-family: "Roboto Condensed", Helvetica, "Helvetica Neue", Arial, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: #393939;
+            font-style: italic;
+            text-transform: uppercase;
+            line-height: 30px;
+            display: inline-grid;
+            text-align: center;
+
+            @media (max-width: $screen-sm) {
+                text-align: left;
+                width: 100%;
+            }
+
+            &:after {
+                content: '';
+                border: 1px solid #ec6607;
+                width: 20px;
+                display: inline-block;
+            }
+        }
+
+        .slick-depoimentos {
+            .depoimentos-item {
+
+                @extend .clearfix;
+                padding: 20px 210px;
+                margin-bottom: 20px;
+                margin-left: -50px;
+
+                @media (max-width: $screen-md) {
+                    padding: 20px 120px;
+                }
+
+                @media (max-width: $screen-sm) {
+                    padding: 20px 55px 0;
+                }
+                
+                h3 {
+                    @extend .st-paragraph-header;
+                    margin-top: 17px;
+                    margin-bottom: 20px;
+                    font-size: 17px;
+                }
+                
+                p {
+                    @extend .st-paragraph;
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin: 0 0 16px;
+                }
+            }
+
+            .depoimentos-img {
+                width: 20%;
+                display: inline-block;
+                vertical-align: top;
+
+                @media (max-width: $screen-sm) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                img {
+                    max-width: 100%;
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .depoimentos-info {
+                width: 78%;
+                display: inline-block;
+                vertical-align: top;
+                text-align: left;
+                font-size: 12px;
+
+                @media (max-width: $screen-md) {
+                    padding-left: 30px;
+                }
+
+                @media (max-width: $screen-sm) {
+                    width: 100%;
+                }
+
+                .button {
+                    padding-left: 40px;
+                    padding-right: 55px;
+                }
+            }
+
+            .slick-prev {
+                width: 89px;
+                height: 80px;
+                background: url('/arquivos/left-arrow-depoimentos.png') no-repeat;
+                float: left;
+                position: relative;
+                top: 15px;
+
+                @media (max-width: $screen-sm) {
+                    display: none !important;
+                }
+            }
+
+            .slick-next {
+                width: 89px;
+                height: 80px;
+                background: url('/arquivos/right-arrow-depoimentos.png');
+                float: right;
+                position: relative;
+                top: -95px;
+
+                @media (max-width: $screen-sm) {
+                    display: none !important;
+                }
+            }
+
+            .slick-dots {
+                margin: 0 0 0 50px;
+
+                @media (max-width: $screen-sm) {
+                    margin: 0 0 0 -20px;
+                }
+
+                li {
+                    background: url('/arquivos/icon-dot-depoimentos.png') no-repeat;
+                    width: 12px;
+                    height: 10px;
+                    margin: 0 2px;
+
+                    button {
+                        width: 0;
+                        height: 0;
+                        background: #fff;
+                    }
+                }
+
+                li.slick-active {
+                    background: url('/arquivos/icon-dot-depoimentos-active.png') no-repeat;
+                    width: 12px;
+                    height: 10px;
+                    margin: 0 2px;
+
+                    button {
+                        width: 0;
+                        height: 0;
+                        background: #fff;
+                        border: unset;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .product-buy-button {
+        width: auto;
+    }
+
+    #image {
+        position: relative;
+        top: -90px;
+    }
+
+    .product-short-description {
+        border: none;
+    }
+
+    .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+        width: auto !important;
+        margin-left: 5px;
+    }
+}

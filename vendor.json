@@ -1,0 +1,22 @@
+{
+  "versions": {
+    "0": {
+      "web": [
+
+      ]
+    },
+    "1": {
+      "web": [
+        "assets/vendor/avanti-class/src/avanti-class.js",
+        "assets/vendor/slick-carousel/slick/slick.min.js",
+        "assets/vendor/js-cookie/src/js.cookie.js",
+        "assets/vendor/jquery-validation/dist/jquery.validate.js",
+        "assets/vendor/avanti-search/src/avanti-search.js",
+        "assets/vendor/lazysizes/lazysizes.js",
+        "assets/vendor/bootstrap-select/js/bootstrap-select.js",
+        "assets/vendor/bootstrap-dropdown/index.js",
+        "assets/vendor/nouislider/distribute/nouislider.js"
+      ]
+    }
+  }
+}

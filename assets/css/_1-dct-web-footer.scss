@@ -1,0 +1,118 @@
+footer {
+    background-color: $darkBlue;
+    .wrapper {
+        @extend .av-container;
+    }
+    color: #fff;
+}
+
+.footer-top {
+    @extend .av-row;
+    padding-top: 46px;
+    padding-bottom: 33px;
+}
+
+.footer-brand {
+    @extend .av-col-xs-24;
+    a {
+        display: block;
+        @extend .sprite-decathlon-pro-logo-inverted;
+        margin-left: 24px;
+    }
+}
+
+.footer-middle {
+    @extend .av-row;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #556b81;
+    ul {
+        @extend .av-col-md-6;
+        @extend .av-col-xs-12;
+        @media (max-width: $screen-xs) { width: 100%; }
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        font-family: $secondaryFont;
+        li {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+            padding-left: 35px;
+            &.footer-title {
+                font-size: 16px;
+                font-weight: 700;
+                padding-left: 0;
+            }
+            a {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
+.footer-title {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 11px;
+        margin-top: -2px;
+    }
+}
+
+$footer-icons: "sobre",
+"atendimento", 
+"redes",
+"pagamento";
+@each $icon in $footer-icons {
+    $i: index($footer-icons, $icon);
+    .footer-#{$icon} .footer-title:before {
+        $footerIcon: 'inline/icon-#{$icon}.png';
+        background-image: inline-image($footerIcon);
+        height: image-height('../img/#{$footerIcon}');
+        width: image-width('../img/#{$footerIcon}');
+    }
+}
+
+.footer-bottom {
+    font-size: 10px;
+    line-height: 12px;
+    p {
+        padding: 0 20px;
+        margin: 33px 0;
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    .footer-middle {
+        margin-top: 28px;
+        ul {
+            margin-bottom: 50px;
+            li {
+                text-align: center;
+                font-size: 13px;
+                padding: 0;
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    .footer-brand a {
+        margin: 0 auto;
+    }
+
+    .footer-pagamento {
+        li {
+            &:last-child {
+                max-width: 205px;
+                margin: 0 auto;
+            }
+        }
+    }    
+}

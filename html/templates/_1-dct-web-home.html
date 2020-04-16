@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <meta name="controller" content="Home" />
+
+    <!-- INICIO - Subtemplate Metatags -->
+    <vtex:template id="1-dct-web-metatags" />
+    <!-- FIM - Subtemplate Metatags -->
+
+    <!-- INICIO - Style e Subtemplate Styles -->
+    <vtex:template id="1-dct-web-styles" />
+    <!-- FIM - Subtemplate Styles -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!-- INICIO - Subtemplate Header -->
+    <vtex:template id="1-dct-web-header" />
+    <!-- FIM - Subtemplate Header -->
+
+    <!-- INICIO - Miolo da página -->
+    <main class="main" id="main">
+        <!-- Banner Desktop -->
+        <div class="home-top-banner">
+            <div class="slick-banner-full">
+                <vtex:contentPlaceHolder id="Banner Principal" />
+            </div>
+        </div>
+
+        <!-- Banner Mobile -->
+        <div class="home-top-banner__mobile">
+            <div class="slick-banner-full">
+                <vtex:contentPlaceHolder id="Banner Principal Mobile" />
+            </div>
+        </div>
+
+        <div class="barra-beneficios-home">
+            <vtex.cmc:barraBeneficios />
+        </div>
+
+        <div class="barra-cadastre-cnpj">
+            <div class="av-container">
+                <img class="image-mail" src="/arquivos/icon-mail.jpg" alt="Icone envio" />
+                <p class="text-mail">Insira seu CNPJ para se Cadastrar</p>
+                <div class="cadastro-cnpj">
+                    <form action="javascript:;" id="formCnpj" class="formCnpj">
+                        <div class="inserir-cnpj">
+                            <input type="text" name="cnpj" id="cnpj" class="required form-control" placeholder="Digite seu CNPJ" />
+                        </div>
+                        <button type="submit" class="button button--blue button--medium button--shadow">Cadastre-se <i class="icon icon-arrow-white"></i></button>
+                    </form>
+                </div>                    
+            </div>
+        </div>
+
+        <div class="home-products-1">
+            <div class="av-container">
+                <div class="av-row">
+                    <div class="av-col-md-17 av-col-sm-24">
+                        <h2 class="home-products-1__titleMobile"> Os mais vendidos</h2>
+                        <vtex:contentPlaceHolder id="Vitrine Produtos 1" />
+                    </div>
+                    <div class="av-col-md-7">
+                        <h2 class="home-products-1__title">
+                            <div class="home-products-1__rotate">
+                                <vtex:contentPlaceHolder id="Title - Vitrine Produtos 1" />
+                            </div>
+                        </h2>
+
+                       <div class="home-products-1__link">
+                            <vtex:contentPlaceHolder id="Banner - Vitrine Produtos 1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="middle-banner">
+            <div class="av-container">
+                <div class="av-row">
+                    <div class="av-col-md-12">
+                        <vtex:contentPlaceHolder id="Banner Conteúdo 2.1" />
+                    </div>
+                    <div class="av-col-md-12">
+                        <vtex:contentPlaceHolder id="Banner Conteúdo 2.2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home-products-2">
+            <div class="av-container">
+                <div class="av-row">
+                    <div class="av-col-md-24">
+
+                        <div class="section-title">
+                            <vtex:contentPlaceHolder id="Vitrine Produtos 2 - Title" />
+                        </div>
+
+                        <div class="shelf-default">
+                            <div class="slick-default slick-default--overflowY">
+                                <vtex:contentPlaceHolder id="Vitrine Produtos 2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="home-informative">
+            <div class="av-container">
+                <div class="av-row">
+                    <div class="av-col-md-24">
+                        <h2 class="home-informative__title"> Decathlon Informa</h2>
+                        <div class="slick-informative"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- FIM - Miolo da página -->
+
+    <!-- INICIO - Subtemplate Generico -->
+    <vtex:template id="1-dct-web-generico" />
+    <!-- FIM - Subtemplate Generico -->
+
+    <!-- INICIO - Subtemplate Footer -->
+    <vtex:template id="1-dct-web-footer" />
+    <!-- FIM - Subtemplate Footer -->
+
+    <!-- INICIO - Suport content -->
+    <div class="suport-content"></div>
+    <!-- FIM - Suport content -->
+
+    <!-- INICIO - Scripts e Subtemplate Scripts -->
+    <vtex:template id="1-dct-web-scripts" />
+    <!-- FIM - Subtemplate Scripts -->
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!-- 1-dct-web-produto -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+  <vtex:metaTags/>
+  <meta name="controller" content="Produto" />
+
+  <!-- INICIO - Subtemplate Metatags -->
+  <vtex:template id="1-dct-web-metatags" />
+  <!-- FIM - Subtemplate Metatags -->
+
+  <!-- INICIO - Style e Subtemplate Styles -->
+  <vtex:template id="1-dct-web-styles" />
+  <!-- FIM - Subtemplate Styles -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- INICIO - Subtemplate Header -->
+  <vtex:template id="1-dct-web-header" />
+  <!-- FIM - Subtemplate Header -->
+
+  <!-- INICIO - Miolo da página -->
+    <main class="main" id="main">
+        <div class="breadcrumb">
+            <div class="wrapper">
+                <div class="bread-crumb">
+                    <vtex.cmc:breadCrumb />
+                </div>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <div class="wrapper">
+                <div class="product-brand">
+                    <vtex.cmc:brandName />
+                </div>
+                <a href="#details" class="product-more-info link-anchor">Mais info</a>
+
+                <div class="product-images">
+                    <vtex.cmc:ProductImage zoom="on" />
+                    <a href="javascript:;" class="av-modal-open product-more-images" data-target="av-modal--product-images">Mais imagens</a>
+                </div>
+
+                <div class="product-buy-info">
+                    <div class="product-reference">
+                        <span class="product-reference__title">Ref: <span class="product-reference__codigo-fabricante"></span></span>
+                    </div>
+                    <div class="product-name">
+                        <vtex.cmc:productName />
+                    </div>
+
+                    <div class="product-price">
+                        <vtex.cmc:skuPrice />
+                    </div>
+
+                    <div class="product-reviews">
+
+                    </div>
+
+                    <div class="product-short-description">
+                      <vtex.cmc:productDescriptionShort />
+                    </div>
+
+                    <div class="product-sku">
+                        <vtex.cmc:skuSelection />
+                    </div>
+
+                    <div class="product-buy">
+                        <div class="product-item-quantity__control">
+                            <span>Quantidade</span>
+                            <a class="product-item__qty-minus">-</a>
+                            <input type="text" class="product-item__qty-field" maxlength="4" value="1" />
+                            <a class="product-item__qty-plus">+</a>
+                        </div>
+                        <div class="product-buy-button">
+                            <vtex.cmc:BuyButton />
+                        </div>
+                    </div>
+                    
+                    <div class="product-shipping">
+                        <form class="product-shipping__form">
+                            <label class="product-shipping__form-label" for="cep">Calcule o valor do frete e prazo de entrega para a sua região</label>
+                            <input class="product-shipping__form-input" type="text" name="cep" id="cep" placeholder="Digite seu cep">
+                            <button class="product-shipping__form-button button button--blue button--medium button--shadow" type="submit">Calcular Frete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-details" id="details">
+            <div class="details-titles">
+                <div class="wrapper">
+                      <!-- START: Product detais titles -->
+                      <ul class="details-titles__list">
+                        <li class="details-titles__item">
+                          <a href="#images" class="details-titles__link link-anchor">Imagens</a>
+                          <a href="#benefits" class="details-titles__link link-anchor">Benefícios do produto</a>
+                          <a href="#technical" class="details-titles__link link-anchor">Informações técnicas</a>
+                          <a href="#concept" class="details-titles__link link-anchor">Conceito e tecnologia</a>
+                          <!-- <a href="#products" class="details-titles__link link-anchor">Últimos produtos vistos</a> -->
+                        </li>
+                      </ul>
+                      <!-- END: Product detais titles -->
+                </div>
+            </div>
+
+            <!-- START: Product details content -->
+            <div class="details-content">
+                <div class="wrapper">
+                    <div id="images" class="details-content__item details-content__item--images">
+                        <h3 class="details__title">Imagens</h3>
+                    </div>
+
+                    <div id="benefits" class="details-content__item details-content__item--benefits">
+                        <h3 class="details__title">Benefícios do produto</h3>
+                    </div>
+
+                    <div id="technical" class="details-content__item details-content__item--technical">
+                        <h3 class="details__title">Informações técnicas</h3>
+                    </div>
+
+                    <div id="concept" class="details-content__item details-content__item--concept">
+                        <h3 class="details__title">conceito e tecnologia do produto</h3>
+                    </div>
+
+                    <div class="product-pecification" style="display: none;">
+                        <vtex.cmc:productSpecification />
+                    </div>
+                </div>
+            </div>
+            <!-- END: Product details content -->
+
+            <!-- START: Product shelf -->
+            <div class="product-shelf last-products">
+                <div class="wrapper">
+                    <div class="section-title">
+                        <vtex:contentPlaceHolder id="Title - Vitrine Produtos" />
+                    </div>
+
+                    <div class="shelf-default">
+                        <div class="slick-default slick-default--overflowY">
+                            <vtex:contentPlaceHolder id="Vitrine Produtos" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Product shelf -->
+
+
+        </div>
+    </main>
+
+    <div class="av-modal av-modal--product-images">
+        <div class="av-modal__modal">
+            <div class="av-modal__header">
+                <a href="javascript:;" class="av-modal-close"></a>
+            </div>
+
+            <div class="av-modal__content">
+              <div class="modal-images__title"><span>Imagens</span></div>
+              <div class="modal-images">
+                <div class="modal-brand">
+                    <vtex.cmc:brandName />
+                </div>
+                <vtex.cmc:ProductImage zoom="off" />
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM - Miolo da página -->
+
+  <!-- INICIO - Subtemplate Generico -->
+  <vtex:template id="1-dct-web-generico" />
+  <!-- FIM - Subtemplate Generico -->
+
+  <!-- INICIO - Subtemplate Footer -->
+  <vtex:template id="1-dct-web-footer" />
+  <!-- FIM - Subtemplate Footer -->
+
+  <!-- INICIO - Suport content -->
+  <div class="suport-content"></div>
+  <!-- FIM - Suport content -->
+
+  <!-- INICIO - Scripts e Subtemplate Scripts -->
+  <vtex:template id="1-dct-web-scripts" />
+  <!-- FIM - Subtemplate Scripts -->
+</body>
+
+</html>

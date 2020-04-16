@@ -1,0 +1,265 @@
+.account,
+.orders {
+	main {
+		@extend .clearfix;
+	}
+
+	.breadcrumb {
+		@extend .av-container;
+		padding-bottom: 25px;
+		.wrapper {
+			@extend .clearfix;
+		}
+	}
+
+	.bread-crumb {
+		@extend .av-col-md-24;
+		@extend .av-hidden-sm;
+		@extend .av-hidden-xs;
+
+	}
+}
+
+.account-title {
+	margin-bottom: 30px;
+
+	.wrapper {
+		@extend .av-container;
+		padding: 0;
+	}
+
+	h1 {
+		@extend .av-col-xs-24;
+		@extend .st-title-header;
+	}
+
+	p {
+		@extend .av-col-xs-24;
+
+		a {
+			color: $decaBlue;
+			font-family: $secondaryFont;
+			font-size: 18px;
+		}
+	}
+}
+
+.account-content {
+	@extend .av-container;
+
+	.wrapper {
+		@extend .av-row;
+	}
+}
+
+.account-profile,
+.account-address {
+	@extend .av-col-xs-24;
+	@extend .av-col-sm-12;
+}
+
+
+.account-profile {
+	margin-bottom: 40px;
+}
+
+.account-block-container {
+	border: 1px solid $borderColor;
+	padding: 20px;
+}
+
+.profile-detail-display,
+.address-display-block {
+	h4 {
+		font-family: $secondaryFont;
+		margin: 0 0 20px;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	h5,
+	p {
+		margin: 0 0 5px;
+		font-size: 14px;
+	}
+}
+
+.address-display-block {
+	h5 {
+		display: inline-block;
+		font-weight: 700;
+	}
+}
+
+.foot-note-account {
+	font-size: 12px;
+	border-top: 1px solid $borderColor;
+	margin: 20px 0 0;
+	padding-top: 10px;
+}
+
+#business-toggle,
+.edit-profile-link,
+.new-address-link { display: none; }
+
+.address-display-unit {
+	margin-bottom: 20px;
+
+	&:last-child { margin-bottom: 0; }
+}
+
+p.edit-address-link { margin: 0 0 5px 30px; }
+
+.edit-address-link,
+.edit-address-link a {
+	display: inline-block;
+	color: $secondaryColor;
+}
+
+.account {
+	.account-btn,
+	#profile-submit,
+	#form-submit,
+	#address-delete {
+		display: inline-block;
+		@extend .button;
+		@extend .button--medium;
+		@extend .button--yellow;
+	}
+
+	.account-btn {
+		margin-top: 20px;
+	}
+}
+
+.account-modals {
+	font-size: 14px;
+	.modal-header {
+		button.close { display: none; }
+	}
+
+	h3 {
+		font-family: $secondaryFont;
+		font-size: 16px;
+		text-transform: uppercase;
+    	margin: 0;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	h5 {
+		font-family: $secondaryFont;
+		margin: 0 0 20px;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.control-group {
+		margin-bottom: 10px;
+		label {
+			display: inline-block;
+			vertical-align: middle;
+			width: 40%;
+
+			&.radio {
+				margin-top: 0;
+			}
+		}
+		.controls {
+			display: inline-block;
+			vertical-align: middle;
+			width: 60%;
+
+			> input[type="text"] {
+				width: 100%;
+				padding: 5px;
+			}
+
+			> select {
+				border: 1px solid #ccc;
+			}
+		}
+
+		> input[type="text"] {
+			width: 60%;
+			padding: 5px;
+		}
+
+		input {
+			border: 1px solid #ccc;
+		}
+
+		input[type="radio"] {
+			vertical-align: middle;
+			margin: -3px 10px 0 0;
+			position: static;
+		}
+
+	}
+	#business-data {
+		display: block;
+		#businessDocument { color: #999}
+	}
+
+	.icon-cancel {
+		font-size: 15px;
+	    margin: 5px 0 0 3px;
+	    display: block;
+	}
+
+	.save-cancel-buttons {
+		input {}
+		button {
+			background: none;
+			border: none;
+			color: $primaryColor;
+		}
+	}
+
+	.btn-link {
+		margin-left: 20px;
+	}
+}
+
+.error-input__account {
+	border: 1px solid #red;
+}
+
+.myorders {
+	.page-header { display: none; }
+
+	.container { width: 100% !important; }
+}
+
+.account-orders .form-search { display: none; }
+
+.vtex-bootstrap .ordergroup { margin-top: 0 !important; }
+
+.myorders-empty {
+	.alert-info {
+		width: 100%;
+    	text-align: center;
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.account-title {
+		h1 {
+			margin-top: 20px;
+			font-size: 20px;
+		}
+	}
+
+	p.edit-address-link {
+		display: block;
+		margin-left: 0;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.orders main {
+		padding: 0 10px;
+	}
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+<head>
+    <title>Carrinho Abandonado</title>
+    <vtex:metaTags/>
+    <style type="text/css">
+		ul{padding:0; margin:0;}
+	</style>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<table width="640" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr>
+			<td>
+				<!-- HEADER -->
+				<table id="" width="640" border="0" cellpadding="0" cellspacing="0" style="background-color: #ffffff; margin-bottom: 40px;"
+				align="center">
+					<tr>
+						<td width="30" style=""></td>
+						<td width="580" colspan="3">
+							<table width="580" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="580" style="padding: 21px 0;">
+										<a href='http://{{_accountInfo.HostName}}.com.br' target='_blank'>
+											<img style="display:block;" src="http://decathlonpro.vteximg.com.br/arquivos/header-email.png" width="600" border="0" alt="decathlonpro"
+										/>
+										</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="30" style=""></td>
+					</tr>
+				</table>
+				<!-- END HEADER -->
+				<br />
+
+				<table id="" width="640" border="0" cellpadding="0" cellspacing="0" >
+					<tr>
+						<td width="30" style=""></td>
+						<td width="580" colspan="3">
+							<table width="580" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<p style=" color:#000;  font-weight: normal; font-size:13px; font-family: 'Roboto', sans-serif;">Olá, {!Nome}.</p>
+										<p style=" color:#000;  font-weight: normal; font-size:13px; font-family: 'Roboto', sans-serif;">Notamos que você não finalizou sua compra. Aproveite enquanto os itens abaixo ainda estão disponíveis e <a href="http://www.decathlonpro.com.br/checkout/cart/{!rclastcart}&amp;utm_source=VTEXCEM&amp;utm_medium=Abandono_carrinho&amp;utm_campaign=Abandono"  style=" color:#000; text-decoration: none;">CLIQUE AQUI</a> para finalizar seu pedido.</p>
+										<vtex.cmc:ProductQueryStringReferenceShelf layout="bdaf1ce2-5b9e-4e90-b6f4-42331dc5197b" itemCount="50" columnCount="100" showUnavailable="true"/>
+							        </td>
+								</tr>
+							</table>
+						</td>
+						<td width="30" style=""></td>
+					</tr>
+				</table>
+
+				<br />
+
+				<!-- FOOTER -->
+				<table id="" width="640" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top: 40px">
+					<tr>
+						<td width="30" style="background-color: #0c2b4a;"></td>
+						<td width="110" valign="top" style="background-color: #0c2b4a; padding: 20px 0">
+							<a href='http://{{_accountInfo.HostName}}.com.br' target='_blank' style="text-decoration:none;">
+								<img style="padding: 0 10px 0 0; border: 0;" src="https://decathlonpro.vteximg.com.br/arquivos/logo-footer-email.png" width="108" alt="Decathlon Pro"
+							/>
+							</a>
+						</td>
+
+						<td width="20" style="background-color: #0c2b4a;"></td>
+
+						<td width="410" align="centerqu" style="background-color: #0c2b4a;">
+							<p style=" color:#b6b6b6;  font-weight: normal; font-size:10px; font-family: 'Roboto', sans-serif;">
+							O site www.decathlonpro.com.br é administrado por IGUASPORT LTDA - Rua Pataxós, 1650 - Embu das Artes - SP - CEP: 06833-904. Todos os Direitos Reservados. Copyright - 2017.
+							</p>
+						</td>
+
+						<td width="30" style="background-color: #0c2b4a;"></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

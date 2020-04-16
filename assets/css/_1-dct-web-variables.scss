@@ -1,0 +1,91 @@
+$primaryColor: #393939;
+$secondaryColor: #0082C3;
+$decaBlue: #0082C3;
+$darkBlue: #004876;
+$trueBlack: #1A171B;
+$darkGrey: #242323;
+$wallGrey: #575D5E;
+$yellow: #FFEA28;
+$orange: #EC6607;
+$priceReduction: #E20C18;
+$borderColor: #e2e2e2;
+$alto: #d8d8d8;
+
+$primaryFont: 'Roboto',
+sans-serif;
+$secondaryFont: 'Roboto Condensed',
+sans-serif;
+
+/**
+ * Grid config
+ */
+$grid-columns: 24;
+$grid-gutter-width: 20px;
+$container-large-desktop: 1160px+$grid-gutter-width;
+
+/* Grid config */
+$grid-columns: 24;
+$grid-gutter-width: 20px;
+
+$container-large-desktop: (1180px + $grid-gutter-width);
+
+$removeGutter: ($grid-gutter-width / 2) * -1;
+
+/* Colors */
+$black: #000;
+$white: #fff;
+$gray: #eee;
+$wildSand: #f4f4f4;
+$alto: #d8d8d8;
+$boulder: #777;
+$silver: #bfbfbf;
+$alabaster: #fafafa;
+$alabasterDarker: #f8f8f8;
+$lochmara: #0082c3;
+$glacier: #70a9c6;
+$mineShaft: #333;
+$caribbeanGreen: #02be8a;
+$silver: #c1c1c1;
+$gallery: #efefef;
+$regalBlue: #004876;
+$broom: #ffea28;
+$prussianBlue: #003654;
+$astronaut: #263671;
+$paradiso: #328186;
+$codGray: #161616;
+$geyser: #d3dde3;
+$allports: #006ea5;
+$brightSun: #fdd835;
+$cornflower: #8bc8e3;
+$silverChalice: #aaa;
+$redRibbon: #e20c18;
+$mineShaftDarker: #393939;
+$mercury: #e1e1e1;
+$mercuryDarker: #e4e4e4;
+$dustyGray: #949494;
+$christine: #EC6607;
+$apple : #42A148;
+$silverButton: #ccc;
+$nobel: #B7B7B7;
+$red: #e60202;
+$emerald: #4CD964;
+$blueLight: #2f9acf;
+$red2: #E23C29;
+$monza: #d0021b;
+$gorse: #f2ff4a;
+
+$checkboxBorderInactive: #c8c8c8;
+
+$bodyColor: $mineShaft;
+$borderColor: $gray;
+
+/* Fonts Weight */
+// Roboto Condensed
+$primaryFontLight: 300;
+$primaryFontRegular: 400;
+$primaryFontBold: 700;
+
+// Roboto
+$secondaryFontLight: 300;
+$secondaryFontRegular: 400;
+$secondaryFontBold: 700;

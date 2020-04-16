@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce"
+  lang="pt-br">
+
+<head>
+  <vtex:metaTags/>
+  <meta name="controller" content="Institucional" />
+
+  <!-- INICIO - Subtemplate Metatags -->
+  <vtex:template id="1-dct-web-metatags" />
+  <!-- FIM - Subtemplate Metatags -->
+
+  <!-- INICIO - Style e Subtemplate Styles -->
+  <vtex:template id="1-dct-web-styles" />
+  <!-- FIM - Subtemplate Styles -->
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+  <!-- INICIO - Subtemplate Header -->
+  <vtex:template id="1-dct-web-header" />
+  <!-- FIM - Subtemplate Header -->
+
+   <!-- INICIO - Miolo da página -->
+    <main class="main" id="main">
+
+        <!-- <div class="breadcrumb">
+            <div class="wrapper">
+                <div class="bread-crumb">
+                    <ul>
+                        <li><a title="Decathlonpro" href="/">Decathlonpro</a></li>
+                        <li class="last"><strong><a title="account" href="/institucional">Institucional</a></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="institucional-title">
+            <div class="wrapper">
+                <h2>
+                  <vtex:contentPlaceHolder id="Title" />
+                </h2>
+            </div>
+        </div>
+
+        <div class="institucional-content">
+            <div class="wrapper">
+                <div class="institucional-text">
+                    <vtex:contentPlaceHolder id="Content Text" />
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FIM - Miolo da página -->
+
+  <!-- INICIO - Subtemplate Generico -->
+  <vtex:template id="1-dct-web-generico" />
+  <!-- FIM - Subtemplate Generico -->
+
+  <!-- INICIO - Subtemplate Footer -->
+  <vtex:template id="1-dct-web-footer" />
+  <!-- FIM - Subtemplate Footer -->
+
+  <!-- INICIO - Suport content -->
+  <div class="suport-content"></div>
+  <!-- FIM - Suport content -->
+
+  <!-- INICIO - Scripts e Subtemplate Scripts -->
+  <vtex:template id="1-dct-web-scripts" />
+  <!-- FIM - Subtemplate Scripts -->
+</body>
+
+</html>

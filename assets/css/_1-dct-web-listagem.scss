@@ -1,0 +1,254 @@
+.listagem {
+	.breadcrumb--listagem {
+		height: 70px;
+		line-height: 70px;
+		border-bottom: 1px solid $borderColor;
+  }
+
+  .resultItemsWrapper {
+    .shelf-item {
+      border: none;
+      border-right: 1px solid $borderColor;
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+}
+
+.listagem-banner {
+	@extend .av-container;
+	padding: 0;
+	border-bottom: 1px solid $borderColor;
+
+	@media (max-width: $screen-sm) {
+		border: none;
+		margin: 0;
+		width: auto
+	}
+
+	.listagem-banner__align {
+		margin-top: -70px;
+
+		@media (max-width: $screen-sm) { margin-top: 0}
+	}
+
+}
+
+.listagem-banner__image {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+
+	&:before {
+		display: inline-block;
+		vertical-align: middle;
+		content: '';
+		width: 0;
+		height: 0;
+		border-left: 0px solid transparent;
+		border-right: 42px solid transparent;
+		border-top: 240px solid $decaBlue;
+
+		@media (max-width: $screen-sm) { display: none }
+	}
+
+	img {
+		display: inline-block;
+		vertical-align: middle;
+
+		@media (max-width: $screen-sm) { display: none }
+	}
+}
+
+.listagem-banner__text {
+	display: inline-block;
+	vertical-align: top;
+	max-width: calc( 100% - 420px );
+
+	@media (max-width: $screen-sm) {
+		max-width: 100%;
+		width: 100%;
+	}
+
+
+	h1 {
+		margin: 78px 0 5px 0;
+		color: $decaBlue;
+		font-size: 29px;
+		font-weight: 700;
+		font-style: italic;
+		font-family: $secondaryFont;
+
+		@media (max-width: $screen-sm) {
+			font-size: 30px;
+			margin: 55px 0;
+			text-align: center;
+		 }
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 400;
+		color: #000;
+
+		@media (max-width: $screen-sm) { display: none }
+	}
+}
+.listagem-banner__banner-cta {
+	float: right;
+
+	@media (max-width: $screen-sm) { display: none }
+}
+
+
+.listagem-filter {
+	@extend .av-col-md-6;
+	// @extend .av-hidden-sm;
+	// @extend .av-hidden-xs;
+	padding: 0;
+}
+
+.listagem-result {
+	@extend .av-container;
+
+	@media (max-width: $screen-sm) {
+		margin: 0;
+		width: 100%;
+	}
+
+	.wrapper {
+		@extend .av-row;
+	}
+}
+
+.listagem-products {
+	@extend .av-col-md-18;
+	@extend .av-col-sm-24;
+	padding: 0
+}
+
+.resultado-busca-filtro {
+	@extend .clearfix;
+	border: 1px solid  $borderColor;
+  	padding: 8px 0 0 0;
+  	border-top: 0;
+  @media (min-width: $screen-md-min) {
+    width: 99.9%;
+  }
+
+	.result-quantity {
+		font-size: 14px;
+		font-family: $secondaryFont;
+		padding: 14px;
+		span {
+			background-color: $primaryColor;
+			display: inline-block;
+			color: #fff;
+			font-weight: 700;
+			padding: 4px 10px;
+		}
+	}
+}
+
+.listagem.resultado-busca {
+	.resultado-busca-filtro {
+		border-top: 1px solid $borderColor;
+	}
+}
+
+.result-quantity {
+	@extend .av-col-md-12;
+	@extend .av-hidden-sm;
+	@extend .av-hidden-xs;
+}
+
+.filter-btn-container {
+	@extend .av-col-xs-9;
+	@extend .av-col-md-12;
+	@extend .av-hidden-md;
+	@extend .av-hidden-lg;
+
+	text-align: center
+}
+
+.orderBy {
+	@extend .av-col-xs-15;
+	@extend .av-col-md-12;
+	padding-top: 8px;
+
+	label { display: none !important;}
+	.btn-group.bootstrap-select { width: 100% !important;}
+}
+
+.load-more {
+	display: block;
+	margin: 40px auto;
+	width: 368px;
+	height: 40px;
+	position: relative;
+	font-weight: 400;
+    line-height: 17px;
+	@extend .button;
+	@extend .button--blue;
+	@extend .button--large;
+	padding-top: 9px;
+
+	@media (max-width: $screen-xs) { width: 90%; }
+
+
+	&:before,
+	&:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		@include transform(translateY(-50%));
+		@extend .sprite-arrow-down-blue;
+	}
+
+	&:before {left: 10px;}
+  &:after {right:10px;}
+
+  &:disabled,
+  &[disabled] {
+    display: none;
+  }
+}
+
+.filterBy,
+.compare,
+.pagination,
+.pager,
+.searchResultsTime,
+.sub:last-of-type,
+.load-less {
+	display: none;
+}
+
+@media (max-width: $screen-sm) {
+	.breadcrumb--listagem { display: none; }
+}
+
+
+.last-products {
+	display: none;
+	margin-bottom: 50px;
+
+	@media (max-width: $screen-sm) { display: block; }
+
+	h2 {
+        @extend .st-title-header;
+        font-weight: bold;
+
+        @media (max-width: $screen-xs) { font-size: 19px; }
+	}
+
+	.slick-dots{
+		margin-top: 20px;
+	}
+}
+
+.prateleira > .prateleira {
+  border-left: 1px solid $borderColor;
+  margin-bottom: 40px;
+}

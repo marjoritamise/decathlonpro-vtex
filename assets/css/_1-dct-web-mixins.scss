@@ -1,0 +1,75 @@
+@mixin primaryFont {
+  font-family: $primaryFont;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+@mixin headerUnderlineTooltip () {
+  background-color: $secondaryColor;
+  bottom: -2px;
+  content: '';
+  display: none;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 6;
+}
+
+@mixin submenu ($bgColor: #f3f3f3) {
+  @include transition(right 300ms ease-out, left 300ms ease-out);
+
+  background-color: $bgColor;
+  left: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: auto;
+  z-index: 1;
+}
+
+@mixin submenuResponsiveLink ($bgColor: #f3f3f3) {
+  &:after {
+    //@extend .sprite-header__menu-arrow;
+
+    @include translateY(-50%);
+
+    content: '';
+    display: none;
+    position: absolute;
+    right: 26px;
+    top: 50%;
+  }
+
+  @media (max-width: $screen-sm-max) {
+    background-color: $bgColor;
+    border-bottom: 1px solid #dfdfdf;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    font-family: $secondaryFont;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    padding: 11px 26px;
+    position: relative;
+    text-transform: uppercase;
+
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+
+    &:after {
+      display: block;
+    }
+  }
+}
+
+@mixin minicartContainer {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
